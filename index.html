@@ -1,0 +1,354 @@
+<!-- Schreibgeschütztes Superstock Terminal mit Live-Handlungsstatus gem. Art. 20 MAR. -->
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superstock Terminal • Quantitative Momentum Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            850: '#151f32',
+                            950: '#070d18',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .accordion-arrow { transition: transform 0.2s ease-in-out; }
+        details[open] .accordion-arrow { transform: rotate(90deg); }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #070d18; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 9999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 p-2 sm:p-4 lg:p-6">
+
+    <div class="max-w-3xl mx-auto space-y-3.5">
+        
+        <!-- HEADER -->
+        <header class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div class="space-y-0.5">
+                <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-cyan-950 border border-cyan-800/60 flex items-center justify-center text-cyan-400">
+                        <i data-lucide="zap" class="w-4 h-4"></i>
+                    </div>
+                    <h1 class="font-black text-base tracking-wide text-slate-100">Superstock Terminal</h1>
+                    <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-800 border border-slate-700 text-cyan-400 uppercase font-mono tracking-wider">Live-Terminal</span>
+                </div>
+                <p class="text-xs text-slate-400">Systematisches Momentum nach Minervini & O’Neil • Dokumentiertes 20k-Experiment</p>
+            </div>
+            <div class="flex items-center gap-2 text-right">
+                <div class="text-xs font-mono text-slate-400">
+                    <span class="text-slate-400 block text-[10px] uppercase font-sans">Letzter Scan</span>
+                    <span id="qad-last-update-time" class="text-slate-200 font-bold">Heute, 06:00 Uhr</span>
+                </div>
+                <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse ring-4 ring-emerald-500/20" title="System aktiv & synchronisiert"></div>
+            </div>
+        </header>
+
+        <!-- TÄGLICHER HANDLUNGSSTATUS FÜR MORGEN -->
+        <section id="banner-handlungsstatus" class="rounded-2xl p-4 border shadow-xl space-y-2 transition-all">
+            <!-- Dynamisch via JavaScript injiziert -->
+        </section>
+
+        <!-- NAVIGATION: DIE 5 SCHREIBGESCHÜTZTEN TABS -->
+        <nav class="bg-slate-900 border border-slate-800/80 rounded-2xl p-1.5 shadow-md flex items-center gap-1 overflow-x-auto">
+            <button type="button" data-tab="market" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 bg-slate-800 text-cyan-300 shadow">
+                <i data-lucide="bar-chart-3" class="w-3.5 h-3.5"></i>
+                <span>1. Markt & Ampel</span>
+            </button>
+            <button type="button" data-tab="newcomer" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>2. Newcomer</span>
+            </button>
+            <button type="button" data-tab="top3" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
+                <i data-lucide="flame" class="w-3.5 h-3.5"></i>
+                <span>3. Fokusliste</span>
+            </button>
+            <button type="button" data-tab="deep" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
+                <i data-lucide="search" class="w-3.5 h-3.5"></i>
+                <span>4. Deep Watchlist</span>
+            </button>
+            <button type="button" data-tab="sperrliste" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
+                <i data-lucide="ban" class="w-3.5 h-3.5"></i>
+                <span>5. Sperrliste</span>
+            </button>
+        </nav>
+
+        <!-- TAB-INHALTE -->
+        <main class="space-y-3.5">
+            
+            <!-- TAB 1: MARKT & STRATEGIE -->
+            <div id="pane-market" class="qad-pane space-y-3">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+                    <div class="grid grid-cols-2 gap-2 text-center text-xs">
+                        <div id="box-market-overall-status" class="p-2.5 rounded-xl border flex flex-col justify-center items-center min-h-[56px]">
+                            <div id="lbl-market-status-title" class="font-bold text-xs leading-tight"></div>
+                            <div id="lbl-market-status-sub" class="text-[10px] font-semibold opacity-90 mt-0.5 font-mono"></div>
+                        </div>
+                        <div id="box-market-action-status" class="p-2.5 rounded-xl border flex flex-col justify-center items-center min-h-[56px]">
+                            <div id="lbl-action-status-title" class="font-bold text-xs leading-tight"></div>
+                            <div id="lbl-action-status-sub" class="text-[10px] font-semibold opacity-90 mt-0.5 font-mono"></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1.5 pt-1">
+                        <div class="flex justify-between items-center text-xs font-mono">
+                            <span class="text-slate-400 font-sans">Marktbreite (US-Aktien über SMA 200):</span>
+                            <span id="lbl-breadth-val" class="font-bold text-cyan-400"></span>
+                        </div>
+                        <div class="w-full bg-slate-950 rounded-full h-2.5 overflow-hidden border border-slate-800 flex">
+                            <div id="bar-breadth-progress" class="h-full bg-cyan-500 rounded-full transition-all" style="width: 50%;"></div>
+                        </div>
+                        <div class="flex justify-between text-[10px] text-slate-400 font-mono">
+                            <span>0% (Baisse)</span>
+                            <span>Schwelle 40-50%</span>
+                            <span>100% (Hausse)</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs pt-1 border-t border-slate-800/80">
+                        <div class="p-2.5 bg-slate-950/80 rounded-xl border border-slate-800/60 font-mono space-y-0.5">
+                            <div class="font-bold text-blue-400 font-sans text-xs">NASDAQ Composite</div>
+                            <div id="lbl-nasdaq-line1" class="text-slate-100 font-semibold"></div>
+                            <div id="lbl-nasdaq-line2" class="text-slate-400 text-[11px]"></div>
+                        </div>
+                        <div class="p-2.5 bg-slate-950/80 rounded-xl border border-slate-800/60 font-mono space-y-0.5">
+                            <div class="font-bold text-blue-400 font-sans text-xs">S&P 500</div>
+                            <div id="lbl-sp500-line1" class="text-slate-100 font-semibold"></div>
+                            <div id="lbl-sp500-line2" class="text-slate-400 text-[11px]"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-2 shadow-lg">
+                    <div class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
+                        <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>System-Handlungsstatus</span>
+                    </div>
+                    <div id="container-actions-list" class="space-y-1.5"></div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-2 shadow-lg">
+                    <div class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
+                        <i data-lucide="arrow-right-left" class="w-3.5 h-3.5 text-fuchsia-400"></i>
+                        <span>Listenverteilung des Tages</span>
+                    </div>
+                    <div id="container-distribution-list" class="space-y-1.5"></div>
+                </div>
+            </div>
+
+            <!-- TAB 2: NEWCOMER DES TAGES -->
+            <div id="pane-newcomer" class="qad-pane hidden space-y-3">
+                <div id="container-newcomer-card"></div>
+            </div>
+
+            <!-- TAB 3: FOKUS-WATCHLIST -->
+            <div id="pane-top3" class="qad-pane hidden space-y-3">
+                <div id="container-top3-cards" class="space-y-3"></div>
+            </div>
+
+            <!-- TAB 4: DEEP WATCHLIST (BASISAUFBAU) -->
+            <div id="pane-deep" class="qad-pane hidden space-y-3">
+                <div id="container-deep-cards" class="space-y-3"></div>
+            </div>
+
+            <!-- TAB 5: SPERRLISTE -->
+            <div id="pane-sperrliste" class="qad-pane hidden space-y-3">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+                    <div class="text-xs font-bold text-rose-400 uppercase tracking-wider flex items-center gap-1.5">
+                        <i data-lucide="ban" class="w-3.5 h-3.5 text-rose-400"></i>
+                        <span>Gesperrte Aktien (3. Strike • 90 Tage)</span>
+                    </div>
+                    <div id="container-sperrliste-items" class="space-y-1.5"></div>
+                    <div class="pt-2 border-t border-slate-800/80">
+                        <div class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5 mb-2">
+                            <i data-lucide="shield-alert" class="w-3.5 h-3.5 text-amber-400"></i>
+                            <span id="lbl-warned-count">Verwarnte Aktien auf Bewährung</span>
+                        </div>
+                        <div id="container-warned-items" class="space-y-1.5"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- RECHTSKONFORMER DISCLAIMER & TRANSPARENZ gem. Art. 20 MAR -->
+        <footer class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/60 text-[11px] text-slate-400 space-y-2 leading-relaxed">
+            <div class="font-bold text-slate-300 flex items-center gap-1.5 uppercase tracking-wider text-[10px]">
+                <i data-lucide="info" class="w-3.5 h-3.5 text-cyan-400"></i>
+                <span>Transparenzhinweis gem. Art. 20 MAR & Disclaimer</span>
+            </div>
+            <p>
+                <strong>Eigenhandels-Offenlegung:</strong> Der Betreiber dieses Portals führt ein dokumentiertes persönliches Trading-Tagebuch mit Eigenkapital über Trade Republic. Der Betreiber hält oder beabsichtigt, Positionen in den genannten Wertpapieren einzugehen.
+            </p>
+            <p>
+                <strong>Keine Anlageberatung:</strong> Alle hier dargestellten Berechnungen, Marktampeln, Oszilloskop-Metriken und Kauftrigger sind rein technische Ergebnisse eines mathematisch-algorithmischen Modells nach Minervini- und O'Neil-Axiomen. Es handelt sich ausdrücklich um keine Anlageberatung, Anlageempfehlung oder Aufforderung zum Kauf oder Verkauf von Finanzinstrumenten.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- INITIALE DATEN (WIRD DURCH EXPORT-SKRIPT AKTUALISIERT) -->
+    <script>
+        window.QAD_PUBLIC_DATA = {
+            "scan_time": "15.10.2026, 06:00 Uhr",
+            "tomorrow_action": {
+                "type": "BUY",
+                "title": "🟢 SYSTEM-STATUS: KAUFBEREIT ($APP) • PRIVATE ORDER GEPLANT",
+                "message": "Ausbruch über Trigger <strong>$124.50</strong> per Tagesschluss bestätigt (+42 % Volumen). Setup Tag 1 von 5 aktiv. Geplante Trade-Republic-Order morgen zum US-Open: <strong>51 Stück</strong> (ca. 6.350 € • 31 % Allokation). Initialer Stop-Loss: <strong>$116.40</strong> (-6.5 %)."
+            },
+            "market_status": {
+                "overall_status": "Bestätigter Aufwärtstrend - Hausse",
+                "action_status": "KAUFERLAUBNIS",
+                "breadth_pct": 59.2,
+                "nasdaq_metrics": { "state_de": "Aufwärtstrend", "dist": 3, "ftd": true },
+                "sp500_metrics": { "state_de": "Aufwärtstrend", "dist": 4, "ftd": true }
+            },
+            "trade_actions": [
+                "**APP** • KAUFSIGNAL • Ausbruch bestätigt • Tag 1 von 5 • Trigger $124.50 • Initial-Stop: $116.40",
+                "**PLTR** • HALTEN • Stop-Loss auf Breakeven $41.20 nachgezogen (Stufe 2)"
+            ],
+            "distribution": [
+                { "ticker": "APP", "origin": "Fokus-Watchlist", "target": "Kaufbereit (Tag 1)" },
+                { "ticker": "XYZ", "origin": "Fokus-Watchlist", "target": "Deep Watchlist" }
+            ],
+            "newcomers_list": [
+                {
+                    "ticker": "APP",
+                    "company_name": "AppLovin Corp.",
+                    "score": 85,
+                    "rank": "A++",
+                    "married_rating": "A++",
+                    "raw_pivot_num": 124.50,
+                    "dist": 1.3,
+                    "catalyst": "Axon 2.0 AI-Engine skaliert massiv im E-Commerce-Sektor.",
+                    "mismatch": "Keine Mängel identifiziert",
+                    "w_form": "Akkumulation",
+                    "w_depth": 21.5,
+                    "w_duration": "14 Wochen",
+                    "w_damping": 1.15,
+                    "d_form": "Startrampe",
+                    "d_coherence": 0.88,
+                    "quarters_table": [
+                        { "quarter": "Q2/26", "revenue_raw": "1200", "eps_raw": "1.25" },
+                        { "quarter": "Q1/26", "revenue_raw": "1060", "eps_raw": "0.67" },
+                        { "quarter": "Q4/25", "revenue_raw": "953", "eps_raw": "0.49" },
+                        { "quarter": "Q3/25", "revenue_raw": "864", "eps_raw": "0.30" }
+                    ]
+                }
+            ],
+            "watchlist_top3": [
+                {
+                    "ticker": "APP",
+                    "company_name": "AppLovin Corp.",
+                    "score": 85,
+                    "rank": "A++",
+                    "married_rating": "A++",
+                    "raw_pivot_num": 124.50,
+                    "dist": 1.3,
+                    "breakout_day": 1,
+                    "catalyst": "Axon 2.0 AI-Engine skaliert massiv im E-Commerce.",
+                    "mismatch": "Keine Mängel identifiziert",
+                    "w_form": "Akkumulation",
+                    "w_depth": 21.5,
+                    "w_damping": 1.15,
+                    "d_form": "Startrampe",
+                    "d_coherence": 0.88,
+                    "quarters_table": [
+                        { "quarter": "Q2/26", "revenue_raw": "1200", "eps_raw": "1.25" },
+                        { "quarter": "Q1/26", "revenue_raw": "1060", "eps_raw": "0.67" }
+                    ]
+                },
+                {
+                    "ticker": "CELH",
+                    "company_name": "Celsius Holdings",
+                    "score": 80,
+                    "rank": "A+",
+                    "married_rating": "A+",
+                    "raw_pivot_num": 58.20,
+                    "dist": -1.9,
+                    "breakout_day": 0,
+                    "catalyst": "Internationale Expansion mit PepsiCo nimmt Fahrt auf.",
+                    "mismatch": "Margen moderat unter Druck",
+                    "w_form": "Akkumulation",
+                    "w_depth": 18.2,
+                    "w_damping": 1.25,
+                    "d_form": "Lauerstellung",
+                    "d_coherence": 0.82,
+                    "quarters_table": [
+                        { "quarter": "Q2/26", "revenue_raw": "402", "eps_raw": "0.28" }
+                    ]
+                }
+            ],
+            "deep_watchlist": [
+                {
+                    "ticker": "IOT",
+                    "company_name": "Samsara Inc.",
+                    "score": 75,
+                    "rank": "B+",
+                    "married_rating": "B+",
+                    "raw_pivot_num": 48.50,
+                    "dist": -6.8,
+                    "recheck_date": "14.11.2026",
+                    "catalyst": "Flotten-Telematik gewinnt Enterprise-Kunden.",
+                    "mismatch": "Bodenbildung noch unvollständig",
+                    "w_form": "Basisaufbau",
+                    "w_depth": 28.0,
+                    "w_damping": 1.45,
+                    "d_form": "Lauerstellung",
+                    "d_coherence": 0.74
+                }
+            ],
+            "sperrliste": [
+                { "ticker": "SMCI", "company_name": "Super Micro Computer", "blocked_until": "15.01.2027" }
+            ],
+            "warned_candidates": [
+                { "ticker": "MDB", "company_name": "MongoDB Inc.", "fails_count": 2, "last_score": 65 }
+            ]
+        };
+    </script>
+
+    <!-- CLIENT LOGIK FÜR RENDERING & TABS -->
+    <script>
+        (function() {
+            const data = window.QAD_PUBLIC_DATA || {};
+
+            function esc(s) {
+                if (s == null) return '';
+                return String(s).replace(/[&<>'"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]));
+            }
+            function fmt$(v) {
+                return '$' + (parseFloat(v) || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            }
+
+            function renderHeaderBanner() {
+                const b = document.getElementById('banner-handlungsstatus');
+                const actionData = data.tomorrow_action || { type: 'NEUTRAL', title: 'SYSTEM-STATUS: NEUTRAL / POSITIONEN IM PLAN', message: 'Keine neuen Setups kaufbereit. Alle bestehenden Stops intakt. System lässt Gewinner laufen.' };
+                
+                let borderCls = 'bg-slate-900 border-slate-700 text-slate-200';
+                let iconName = 'clock';
+                let iconCol = 'text-slate-400';
+
+                if (actionData.type === 'BUY') {
+                    borderCls = 'bg-emerald-950/40 border-emerald-500/80 text-emerald-300 ring-1 ring-emerald-500/30';
+                    iconName = 'zap';
+                    iconCol = 'text-emerald-400';
+                } else if (actionData.type === 'SELL') {
+                    borderCls = 'bg-rose-950/40 border-rose-500/80 text-rose-300 ring-1 ring-rose-500/30';
+                    iconName = 'alert-triangle';
+                    iconCol = 'text-rose-400';
+                }
+
+                b.className = `rounded-2xl p-4 border shadow-xl space-y-2 transition-all ${borderCls}`;
+       
