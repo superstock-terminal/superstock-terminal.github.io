@@ -28,7 +28,7 @@
             <div class="flex items-center gap-2 text-right">
                 <div class="text-xs font-mono text-slate-400">
                     <span class="text-slate-400 block text-[10px] uppercase font-sans">Letzter Scan</span>
-                    <span class="text-slate-200 font-bold">19.10.2026, 11:40 Uhr</span>
+                    <span class="text-slate-200 font-bold">19.10.2026, 12:31 Uhr</span>
                 </div>
                 <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse ring-4 ring-emerald-500/20" title="System aktiv & synchronisiert"></div>
             </div>
@@ -70,11 +70,9 @@
                     <div class="grid grid-cols-2 gap-2 text-center text-xs">
                         <div class="p-2 rounded-xl border flex flex-col justify-center items-center min-h-[52px] bg-amber-950/80 border-amber-800/60 text-amber-300">
                             <div class="font-bold text-xs leading-tight">Aufwärtstrend unter Druck</div>
-                            <div class="text-[10px] font-semibold opacity-90 mt-0.5 font-mono">UNTER DRUCK</div>
                         </div>
                         <div class="p-2 rounded-xl border flex flex-col justify-center items-center min-h-[52px] bg-amber-950/80 border-amber-800/60 text-amber-300">
                             <div class="font-bold text-xs leading-tight">KAUFERLAUBNIS A++</div>
-                            <div class="text-[10px] font-semibold opacity-90 mt-0.5 font-mono">FOKUS A++</div>
                         </div>
                     </div>
 
@@ -106,7 +104,7 @@
 
                 <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 space-y-2">
                     <div class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
-                        <span class="text-amber-400">🛡️</span>
+                        <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
                         <span>Aktive Trading-Aktionen</span>
                     </div>
                     <div class="space-y-1.5"><div class="p-3 bg-slate-900/40 border border-slate-800/60 rounded-xl text-xs text-slate-400 italic">Keine offenen Handelsaktionen. Alle Positionen im planmäßigen Sollkorridor.</div></div>
@@ -114,7 +112,7 @@
 
                 <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 space-y-2">
                     <div class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
-                        <span class="text-fuchsia-400">📊</span>
+                        <svg class="w-3.5 h-3.5 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path></svg>
                         <span>Listenverteilung des Tages</span>
                     </div>
                     <div class="space-y-1.5"><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">STLN</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-emerald-400 font-bold">Fokus-Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span></div></div><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">STNG</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-emerald-400 font-bold">Fokus-Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span></div></div><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">KEYS</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-rose-400 font-bold">Sperrliste</span></div></div><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">FSLY</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-rose-400 font-bold">Sperrliste</span></div></div></div>
@@ -161,21 +159,42 @@
                     </div>
                 </div>
 
+                <!-- ORIGINAL ZEITLEISTE DER MEILENSTEINE -->
                 <div class="p-3 bg-slate-950/80 border border-slate-800/80 rounded-xl space-y-2">
                     <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-sans">QAD P&L Trailing-Meilensteine</div>
-                    <div class="grid grid-cols-4 gap-1 text-[9px] text-center font-mono">
-                        <div class="p-1.5 rounded bg-cyan-500 text-slate-950 font-black">1. Initial<br>(-6.5%)</div>
-                        <div class="p-1.5 rounded bg-slate-900 text-slate-400 border border-slate-800">2. Breakeven<br>(+10%)</div>
-                        <div class="p-1.5 rounded bg-slate-900 text-slate-400 border border-slate-800">3. SMA 50<br>(+20%)</div>
-                        <div class="p-1.5 rounded bg-slate-900 text-slate-400 border border-slate-800">4. EMA 21<br>(+50%)</div>
+                    <div class="flex items-center justify-between relative pt-1 pb-1">
+                        <div class="absolute top-[14px] left-6 right-6 h-0.5 bg-slate-800 z-0"></div>
+                        <div class="absolute top-[14px] left-6 h-0.5 bg-cyan-500 z-0 transition-all" style="width: calc(0% * 0.88);"></div>
+                        <div class="relative z-10 flex w-full justify-between gap-1">
+                            <div class="flex-1 flex flex-col items-center text-center gap-0.5 min-w-0">
+                    <div class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] shrink-0 mb-0.5 bg-cyan-500 text-slate-950 font-black ring-4 ring-cyan-500/20">1</div>
+                    <span class="text-[9px] font-medium leading-tight text-cyan-300 font-bold">1. Initial</span>
+                    <span class="text-[8px] font-mono leading-none text-cyan-400/80 font-bold">(-6.5%)</span>
+                </div><div class="flex-1 flex flex-col items-center text-center gap-0.5 min-w-0">
+                    <div class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] shrink-0 mb-0.5 bg-slate-800 text-slate-500 font-medium">2</div>
+                    <span class="text-[9px] font-medium leading-tight text-slate-400">2. Breakeven</span>
+                    <span class="text-[8px] font-mono leading-none text-slate-500">(+10%)</span>
+                </div><div class="flex-1 flex flex-col items-center text-center gap-0.5 min-w-0">
+                    <div class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] shrink-0 mb-0.5 bg-slate-800 text-slate-500 font-medium">3</div>
+                    <span class="text-[9px] font-medium leading-tight text-slate-400">3. SMA 50</span>
+                    <span class="text-[8px] font-mono leading-none text-slate-500">(+20%)</span>
+                </div><div class="flex-1 flex flex-col items-center text-center gap-0.5 min-w-0">
+                    <div class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] shrink-0 mb-0.5 bg-slate-800 text-slate-500 font-medium">4</div>
+                    <span class="text-[9px] font-medium leading-tight text-slate-400">4. EMA 21</span>
+                    <span class="text-[8px] font-mono leading-none text-slate-500">(+50%)</span>
+                </div>
+                        </div>
                     </div>
-                    <div class="text-[10px] text-slate-300 font-mono text-center pt-0.5">Noch 12.3% bis Breakeven ($220.08)</div>
+                    <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 text-[11px] text-slate-300 font-mono text-center flex items-center justify-center gap-1.5">
+                        <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        <span>Noch 12.3% bis Breakeven ($220.08)</span>
+                    </div>
                 </div>
 
                 <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
                     <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                        <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                        <span class="accordion-arrow text-slate-400">▶</span>
+                        <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                        <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
                     </summary>
                     <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                         
@@ -312,7 +331,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">LLY</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-rose-950 text-rose-300 border-rose-800/60 font-bold font-mono">KAUFSPERRE</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Eli Lilly and Company</div>
             </div>
@@ -333,15 +352,15 @@
                 <span class="text-slate-100 font-semibold">29.10.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="px-1.5 py-0.5 rounded text-[10px] font-mono text-rose-400 font-bold bg-rose-950/80 border border-rose-800/60 uppercase">KAUFSPERRE</span></div><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
                 <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$1257.03</span><span class="ml-1 text-[10px] text-slate-400"> (-3.2%)</span></div>
             </div>
         </div>
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -475,7 +494,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">AMG</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-amber-950 text-amber-300 border-amber-800/60 font-bold font-mono">KAUFERLAUBNIS A++</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Affiliated Managers Group, Inc.</div>
             </div>
@@ -496,15 +515,15 @@
                 <span class="text-slate-100 font-semibold">02.11.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$395.00</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span></div><span class="font-mono font-black text-sm text-cyan-400">$395.00</span></div>
                 <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$383.76</span><span class="ml-1 text-[10px] text-slate-400"> (-2.8%)</span></div>
             </div>
         </div>
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -637,7 +656,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">LLY</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-rose-950 text-rose-300 border-rose-800/60 font-bold font-mono">KAUFSPERRE</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Eli Lilly and Company</div>
             </div>
@@ -658,15 +677,15 @@
                 <span class="text-slate-100 font-semibold">29.10.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="px-1.5 py-0.5 rounded text-[10px] font-mono text-rose-400 font-bold bg-rose-950/80 border border-rose-800/60 uppercase">KAUFSPERRE</span></div><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
                 <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$1257.03</span><span class="ml-1 text-[10px] text-slate-400"> (-2.8%)</span></div>
             </div>
         </div>
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -799,7 +818,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">HALO</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-rose-950 text-rose-300 border-rose-800/60 font-bold font-mono">KAUFSPERRE</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Halozyme Therapeutics, Inc.</div>
             </div>
@@ -820,15 +839,15 @@
                 <span class="text-slate-100 font-semibold">02.11.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$116.85</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="px-1.5 py-0.5 rounded text-[10px] font-mono text-rose-400 font-bold bg-rose-950/80 border border-rose-800/60 uppercase">KAUFSPERRE</span></div><span class="font-mono font-black text-sm text-cyan-400">$116.85</span></div>
                 <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$121.84</span><span class="ml-1 text-[10px] text-slate-400"> (+4.3%)</span></div>
             </div>
         </div>
         <div class="p-2 rounded-xl border flex items-center justify-center gap-1.5 text-xs font-semibold bg-emerald-950/80 border-emerald-500/80 text-emerald-300"><span>Retest aktiv • Tag 3 von 5 (Kaufbereit)</span></div>
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -961,7 +980,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">ASC</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-rose-950 text-rose-300 border-rose-800/60 font-bold font-mono">KAUFSPERRE</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Ardmore Shipping Corporation</div>
             </div>
@@ -989,8 +1008,8 @@
         <div class="p-2 rounded-xl border border-amber-600/70 bg-slate-950/80 text-amber-300 text-xs font-semibold flex items-center justify-center font-mono"><span>Status: LAUERSTELLUNG (COILING)</span></div>
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -1152,8 +1171,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -1314,8 +1333,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -1476,8 +1495,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -1638,8 +1657,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -1800,8 +1819,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -1962,8 +1981,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -2124,8 +2143,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -2286,8 +2305,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -2448,8 +2467,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -2610,8 +2629,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -2772,8 +2791,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -2934,8 +2953,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -3096,8 +3115,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -3258,8 +3277,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -3420,8 +3439,8 @@
         
         <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
             <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                <span class="flex items-center gap-1.5"><span class="text-amber-500">✨</span><span>Vollständige Analyse</span></span>
-                <span class="accordion-arrow text-slate-400">▶</span>
+                <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
             </summary>
             <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                 
@@ -3551,7 +3570,8 @@
                 <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 space-y-3">
                     <div class="space-y-2">
                         <div class="text-xs font-bold text-rose-400 uppercase tracking-wider flex items-center gap-1.5">
-                            <span>🚫 Gesperrte Aktien (3. Strike • 90 Tage)</span>
+                            <svg class="w-3.5 h-3.5 text-rose-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+                            <span>Gesperrte Aktien (3. Strike • 90 Tage)</span>
                         </div>
                         <div class="space-y-1.5"><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FSLY</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">17.01.2027</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 90%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Fastly, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">KEYS</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">17.01.2027</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 90%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Keysight Technologies, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">COHU</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">14.01.2027</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 80%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Cohu, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MU</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">13.01.2027</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 90%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Micron Technology, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">HAFN</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">07.01.2027</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 95%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Hafnia Limited</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">ARX</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">05.01.2027</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 95%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Accelerant Holdings</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MTRN</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">04.01.2027</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 85%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Materion Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">AGEN</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">28.12.2026</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 90%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Agenus Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FTNT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">23.12.2026</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 20%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Fortinet, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DBRG</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">24.12.2026</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">DigitalBridge Group, Inc.</div></div></div>
                     </div>
@@ -3559,7 +3579,7 @@
                         <div class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5 mb-2">
                             <span>Verwarnte Aktien auf Bewährung</span>
                         </div>
-                        <div class="space-y-1.5"><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FLYW</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 65%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Flywire Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FEIM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Frequency Electronics, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">CLMT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Calumet, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">COP</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 55%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ConocoPhillips</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Permian Resources Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">XOM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 45%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ExxonMobil Holdings Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">AFRM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Affirm Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">EQNR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Equinor ASA</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PNTG</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">The Pennant Group, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">nVent Electric plc</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MUR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Murphy Oil Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVGS</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Navigator Holdings Ltd.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DHT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">DHT Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">KNTK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Kinetik Holdings Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">BTE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Baytex Energy Corp.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DVN</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Devon Energy Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">HPE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Hewlett Packard Enterprise Company</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">TECK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 20%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Teck Resources Limited</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MEOH</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Methanex Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">OXY</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Occidental Petroleum Corporation</div></div></div>
+                        <div class="space-y-1.5"><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FLYW</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 65%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Flywire Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FEIM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Frequency Electronics, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">CLMT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Calumet, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">COP</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 55%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ConocoPhillips</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Permian Resources Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">XOM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 45%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ExxonMobil Holdings Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">AFRM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Affirm Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">EQNR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Equinor ASA</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PNTG</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">The Pennant Group, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">nVent Electric plc</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MUR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Murphy Oil Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DHT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">DHT Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVGS</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Navigator Holdings Ltd.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">KNTK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Kinetik Holdings Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">BTE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Baytex Energy Corp.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DVN</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Devon Energy Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">HPE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Hewlett Packard Enterprise Company</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">TECK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 20%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Teck Resources Limited</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">OXY</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Occidental Petroleum Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MEOH</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Methanex Corporation</div></div></div>
                     </div>
                 </div>
             </div>
@@ -3575,7 +3595,7 @@
             <details class="pt-2 border-t border-slate-800/80 text-[10px] text-slate-400">
                 <summary class="cursor-pointer font-semibold text-slate-400 hover:text-cyan-400 flex items-center justify-between select-none py-1">
                     <span>Rechtliche Angaben / Impressum (§ 5 DDG)</span>
-                    <span class="accordion-arrow">▶</span>
+                    <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </summary>
                 <div class="p-3 mt-1.5 bg-slate-950/80 rounded-xl border border-slate-800/60 space-y-1 font-mono text-[10px]">
                     <div class="font-bold text-slate-200 font-sans text-[11px]">Betreiber dieses Portals:</div>
