@@ -1,9 +1,9 @@
-<!-- Vollständig vorgerendertes Superstock Terminal mit Live-Handlungsstatus gem. Art. 20 MAR. -->
 <!DOCTYPE html>
 <html lang="de" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <title>Superstock Terminal • Quantitative Momentum Intelligence</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -15,77 +15,76 @@
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 p-2 sm:p-4 lg:p-6">
-
     <div class="max-w-3xl mx-auto space-y-3.5">
-        
-        <!-- HEADER -->
         <header class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div class="space-y-0.5">
                 <div class="flex items-center gap-2">
-                    <div class="w-7 h-7 rounded-lg bg-cyan-950 border border-cyan-800/60 flex items-center justify-center text-cyan-400">
-                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                    </div>
+                    <div class="w-7 h-7 rounded-lg bg-cyan-950 border border-cyan-800/60 flex items-center justify-center text-cyan-400 font-bold text-sm">⚡</div>
                     <h1 class="font-black text-base tracking-wide text-slate-100">Superstock Terminal</h1>
                     <span class="px-2 py-0.5 rounded-md text-[10px] font-bold bg-slate-800 border border-slate-700 text-cyan-400 uppercase font-mono tracking-wider">Live-Terminal</span>
                 </div>
-                <p class="text-xs text-slate-400">Systematisches Momentum nach Minervini & O’Neil • Dokumentiertes 20k-Experiment</p>
+                <p class="text-xs text-slate-400">Systematisches Momentum nach Minervini & O’Neil • Dokumentiertes 3k-Experiment</p>
             </div>
             <div class="flex items-center gap-2 text-right">
                 <div class="text-xs font-mono text-slate-400">
                     <span class="text-slate-400 block text-[10px] uppercase font-sans">Letzter Scan</span>
-                    <span class="text-slate-200 font-bold">15.10.2026, 06:00 Uhr</span>
+                    <span class="text-slate-200 font-bold">19.10.2026, 03:04 Uhr</span>
                 </div>
                 <div class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse ring-4 ring-emerald-500/20" title="System aktiv & synchronisiert"></div>
             </div>
         </header>
 
-        <!-- TÄGLICHER HANDLUNGSSTATUS FÜR MORGEN -->
         <section class="rounded-2xl p-4 border shadow-xl space-y-2 transition-all bg-emerald-950/40 border-emerald-500/80 text-emerald-300 ring-1 ring-emerald-500/30">
             <div class="flex items-center gap-2 font-bold text-xs uppercase tracking-wider">
-                <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                <span>🟢 SYSTEM-STATUS: KAUFBEREIT ($APP) • PRIVATE ORDER GEPLANT</span>
+                <span>🟢 SYSTEM-STATUS: KAUFBEREIT ($HALO) • PRIVATE ORDER GEPLANT</span>
             </div>
-            <div class="text-xs text-slate-200 font-sans leading-relaxed">
-                Ausbruch über Trigger <strong>$124.50</strong> per Tagesschluss bestätigt (+42 % Volumen). Setup Tag 1 von 5 aktiv. Geplante Trade-Republic-Order heute zum US-Open um 15:30 Uhr: <strong>51 Stück</strong> (ca. 6.350 € • 31 % Allokation). Initialer Stop-Loss: <strong>$116.40</strong> (-6.5 %).
-            </div>
+            <div class="text-xs text-slate-200 font-sans leading-relaxed">Setup erfüllt für <strong>$HALO</strong> (Halozyme Therapeutics, Inc.) • Retest aktiv (Tag 3 von 5). Kauftrigger: <strong>$116.85</strong>. Geplante persönliche Trade-Republic-Order heute ab 08:00 Uhr: <strong>54 Stück</strong> (ca. 6,309.90 € • 31 % Allokation). Definierter Initial-Stop-Loss: <strong>$109.25</strong> (-6.5 %).</div>
             <div class="text-[10px] text-slate-400 font-mono pt-1 border-t border-slate-800/60 flex items-center justify-between">
                 <span>Reines algorithmisches Test-Tagebuch</span>
                 <span>Dokumentierter Eigenhandel via Trade Republic</span>
             </div>
         </section>
 
-        <!-- NAVIGATION: DIE 5 SCHREIBGESCHÜTZTEN TABS -->
         <nav class="bg-slate-900 border border-slate-800/80 rounded-2xl p-1.5 shadow-md flex items-center gap-1 overflow-x-auto">
-            <button type="button" data-tab="market" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 bg-slate-800 text-cyan-300 shadow">
+            <button type="button" data-tab="market" class="qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1 bg-slate-800 text-cyan-300 shadow">
                 <span>1. Markt & Ampel</span>
             </button>
-            <button type="button" data-tab="newcomer" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
-                <span>2. Newcomer</span>
+            <button type="button" data-tab="depot" class="qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1">
+                <span>2. Depot</span>
             </button>
-            <button type="button" data-tab="top3" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
-                <span>3. Fokusliste</span>
+            <button type="button" data-tab="newcomer" class="qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1">
+                <span>3. Newcomer</span>
             </button>
-            <button type="button" data-tab="deep" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
-                <span>4. Deep Watchlist</span>
+            <button type="button" data-tab="top3" class="qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1">
+                <span>4. Fokusliste</span>
             </button>
-            <button type="button" data-tab="sperrliste" class="qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5">
-                <span>5. Sperrliste</span>
+            <button type="button" data-tab="deep" class="qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1">
+                <span>5. Deep Watchlist</span>
+            </button>
+            <button type="button" data-tab="sperrliste" class="qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1">
+                <span>6. Sperrliste</span>
             </button>
         </nav>
 
-        <!-- TAB-INHALTE -->
-        <main class="space-y-3.5">
-            
-            <!-- TAB 1: MARKT & STRATEGIE -->
+        <div id="paywall-lock-banner" class="hidden p-4 rounded-2xl bg-slate-900 border border-cyan-500/50 shadow-2xl space-y-3 text-center">
+            <div class="w-10 h-10 rounded-2xl bg-cyan-950 border border-cyan-800/80 mx-auto flex items-center justify-center text-cyan-400 text-lg">🔒</div>
+            <div class="space-y-1">
+                <h3 class="font-bold text-sm text-slate-100">Superstock Terminal • Pro Pass</h3>
+                <p class="text-xs text-slate-400 max-w-md mx-auto">Der vollständige Zugriff auf alle 6 Tabs, Newcomer-Dossiers, SEC-Audits und Watchlists ist aktiven Abonnenten vorbehalten.</p>
+            </div>
+            <a href="https://whop.com" target="_blank" class="inline-block py-2.5 px-6 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs transition shadow-lg">Jetzt Terminal freischalten (49 € / Monat)</a>
+        </div>
+
+        <main id="qad-tab-content-area" class="space-y-3.5">
             <div id="pane-market" class="qad-pane space-y-3">
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
                     <div class="grid grid-cols-2 gap-2 text-center text-xs">
                         <div class="p-2.5 rounded-xl border flex flex-col justify-center items-center min-h-[56px] bg-emerald-950/70 border-emerald-800 text-emerald-300">
-                            <div class="font-bold text-xs leading-tight">Bestätigter Aufwärtstrend</div>
+                            <div class="font-bold text-xs leading-tight">Aufwärtstrend unter Druck</div>
                             <div class="text-[10px] font-semibold opacity-90 mt-0.5 font-mono">HAUSSE-MODUS</div>
                         </div>
                         <div class="p-2.5 rounded-xl border flex flex-col justify-center items-center min-h-[56px] bg-emerald-950/70 border-emerald-800 text-emerald-300">
-                            <div class="font-bold text-xs leading-tight">KAUFERLAUBNIS</div>
+                            <div class="font-bold text-xs leading-tight">KAUFERLAUBNIS A++</div>
                             <div class="text-[10px] font-semibold opacity-90 mt-0.5 font-mono">SYSTEM KAUFBEREIT</div>
                         </div>
                     </div>
@@ -93,10 +92,10 @@
                     <div class="space-y-1.5 pt-1">
                         <div class="flex justify-between items-center text-xs font-mono">
                             <span class="text-slate-400 font-sans">Marktbreite (US-Aktien über SMA 200):</span>
-                            <span class="font-bold text-cyan-400">59.2 %</span>
+                            <span class="font-bold text-cyan-400">41.8 %</span>
                         </div>
                         <div class="w-full bg-slate-950 rounded-full h-2.5 overflow-hidden border border-slate-800 flex">
-                            <div class="h-full bg-cyan-500 rounded-full transition-all" style="width: 59.2%;"></div>
+                            <div class="h-full bg-cyan-500 rounded-full transition-all" style="width: 41.833333333333336%;"></div>
                         </div>
                         <div class="flex justify-between text-[10px] text-slate-400 font-mono">
                             <span>0% (Baisse)</span>
@@ -108,13 +107,13 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs pt-1 border-t border-slate-800/80">
                         <div class="p-2.5 bg-slate-950/80 rounded-xl border border-slate-800/60 font-mono space-y-0.5">
                             <div class="font-bold text-blue-400 font-sans text-xs">NASDAQ Composite</div>
-                            <div class="text-slate-100 font-semibold">Trend: Aufwärtstrend</div>
+                            <div class="text-slate-100 font-semibold">Trend: Bestätigter Aufwärtstrend</div>
                             <div class="text-slate-400 text-[11px]">Verteilungstage: 3 • FTD: Ja</div>
                         </div>
                         <div class="p-2.5 bg-slate-950/80 rounded-xl border border-slate-800/60 font-mono space-y-0.5">
                             <div class="font-bold text-blue-400 font-sans text-xs">S&P 500</div>
-                            <div class="text-slate-100 font-semibold">Trend: Aufwärtstrend</div>
-                            <div class="text-slate-400 text-[11px]">Verteilungstage: 4 • FTD: Ja</div>
+                            <div class="text-slate-100 font-semibold">Trend: Rallye-Versuch aktiv</div>
+                            <div class="text-slate-400 text-[11px]">Verteilungstage: 0 • FTD: Nein</div>
                         </div>
                     </div>
                 </div>
@@ -124,14 +123,7 @@
                         <span class="w-2 h-2 rounded-full bg-amber-400"></span>
                         <span>System-Handlungsstatus</span>
                     </div>
-                    <div class="space-y-1.5">
-                        <div class="p-2.5 bg-slate-950/70 border-l-2 border-cyan-500 rounded-r-xl text-xs text-slate-200 leading-relaxed font-sans">
-                            <strong class="text-cyan-400 font-mono">APP</strong> • KAUFSIGNAL • Ausbruch bestätigt • Tag 1 von 5 • Trigger $124.50 • Initial-Stop: $116.40
-                        </div>
-                        <div class="p-2.5 bg-slate-950/70 border-l-2 border-slate-700 rounded-r-xl text-xs text-slate-400 leading-relaxed font-sans">
-                            <strong class="text-purple-400 font-mono">PLTR</strong> • HALTEN • Stop-Loss auf Breakeven $41.20 nachgezogen (Stufe 2 aktiv)
-                        </div>
-                    </div>
+                    <div class="space-y-1.5"><div class="p-2.5 text-xs text-slate-500 italic">Keine Handelsaktionen im Plan.</div></div>
                 </div>
 
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-2 shadow-lg">
@@ -139,197 +131,979 @@
                         <span class="w-2 h-2 rounded-full bg-fuchsia-400"></span>
                         <span>Listenverteilung des Tages</span>
                     </div>
-                    <div class="space-y-1.5 font-mono text-xs">
-                        <div class="p-2 bg-slate-950/70 border border-slate-800 rounded-xl flex items-center justify-between">
-                            <span class="font-bold text-cyan-400">APP</span>
-                            <span class="text-slate-400 font-sans">Fokus-Watchlist ➔ <strong class="text-emerald-400">Kaufbereit (Tag 1)</strong></span>
-                        </div>
-                        <div class="p-2 bg-slate-950/70 border border-slate-800 rounded-xl flex items-center justify-between">
-                            <span class="font-bold text-cyan-400">XYZ</span>
-                            <span class="text-slate-400 font-sans">Fokus-Watchlist ➔ <strong class="text-fuchsia-400">Deep Watchlist</strong></span>
-                        </div>
-                    </div>
+                    <div class="space-y-1.5 font-mono text-xs"><div class="p-2 bg-slate-950/70 border border-slate-800 rounded-xl flex items-center justify-between"><span class="font-bold text-cyan-400">STLN</span><span class="text-slate-400 font-sans">Fokus-Watchlist ➔ <strong class="text-slate-200">Deep Watchlist</strong></span></div><div class="p-2 bg-slate-950/70 border border-slate-800 rounded-xl flex items-center justify-between"><span class="font-bold text-cyan-400">STNG</span><span class="text-slate-400 font-sans">Fokus-Watchlist ➔ <strong class="text-slate-200">Deep Watchlist</strong></span></div><div class="p-2 bg-slate-950/70 border border-slate-800 rounded-xl flex items-center justify-between"><span class="font-bold text-cyan-400">KEYS</span><span class="text-slate-400 font-sans">Deep Watchlist ➔ <strong class="text-slate-200">Sperrliste</strong></span></div><div class="p-2 bg-slate-950/70 border border-slate-800 rounded-xl flex items-center justify-between"><span class="font-bold text-cyan-400">FSLY</span><span class="text-slate-400 font-sans">Deep Watchlist ➔ <strong class="text-slate-200">Sperrliste</strong></span></div></div>
                 </div>
             </div>
 
-            <!-- TAB 2: NEWCOMER DES TAGES -->
+            <div id="pane-depot" class="qad-pane hidden space-y-3">
+    <div class="space-y-3">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+            <div class="space-y-1 text-center border-b border-slate-800/80 pb-3">
+                <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Dokumentierter Depotwert (Trade Republic 3k-Startbasis)</div>
+                <div class="text-2xl sm:text-3xl font-black font-mono text-cyan-400 tracking-tight">$19,866.72</div>
+            </div>
+            <div class="space-y-1">
+                <div class="w-full flex justify-between items-center text-[11px] font-mono">
+                    <div class="text-cyan-400 font-semibold">31.6% Investiert ($6,269.12)</div>
+                    <div class="text-slate-300 font-semibold">68.4% Cash ($13,597.60)</div>
+                </div>
+                <div class="w-full bg-slate-950 rounded-full h-2 overflow-hidden border border-slate-800 flex">
+                    <div class="h-full bg-cyan-500" style="width: 31.55588844056794%;"></div>
+                    <div class="h-full bg-slate-700" style="width: 68.44411155943206%;"></div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 text-xs font-mono pt-1">
+                <div class="bg-slate-950/80 py-2 px-3 rounded-xl border border-slate-800/80 text-center">
+                    <div class="text-[10px] text-slate-400 font-sans">Unrealisierter G/V:</div>
+                    <div class="font-bold text-rose-400 mt-0.5">-2.08%</div>
+                    <div class="text-[10px] text-slate-400">-133.28 $</div>
+                </div>
+                <div class="bg-slate-950/80 py-2 px-3 rounded-xl border border-slate-800/80 text-center">
+                    <div class="text-[10px] text-slate-400 font-sans">Realisierter G/V:</div>
+                    <div class="font-bold text-emerald-400 mt-0.5">+0.00%</div>
+                    <div class="text-[10px] text-slate-400">Win-Rate: 0.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+            <div class="text-xs font-bold text-slate-200 uppercase tracking-wider">Aktiver Bestand (1 Positionen)</div>
+            <div class="space-y-2">
+            <div class="p-3.5 bg-slate-950/80 border border-slate-800 rounded-2xl space-y-2 text-xs font-mono shadow-md">
+                <div class="flex justify-between items-start border-b border-slate-900 pb-2">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-black text-purple-400 text-sm tracking-wide">EXPD</span>
+                            <span class="text-slate-300 font-sans text-xs">Expeditors International of Washington, Inc.</span>
+                        </div>
+                        <div class="text-[11px] text-slate-400 font-sans mt-0.5">Einstieg: $200.07 • 32 Stk. ($6,402.40 investiert)</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-rose-400 font-bold text-sm">-2.08% (-133.28 $)</div>
+                        <div class="text-[11px] text-slate-300">Aktuell: $195.91 (Wert: $6,269.12)</div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center text-[11px]">
+                    <span class="text-cyan-400 font-bold font-sans">STOP-LOSS: $190.61</span>
+                    <span class="text-amber-400 font-bold font-mono">+2.7% Puffer</span>
+                </div>
+
+                <div class="p-2.5 bg-slate-900/60 rounded-xl border border-slate-800/60 space-y-1.5 font-sans">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase">QAD Trailing-Meilensteine</div>
+                    <div class="grid grid-cols-4 gap-1 text-[9px] text-center font-mono">
+                        <div class="p-1 rounded bg-cyan-500 text-slate-950 font-black">1. Initial<br>(-6.5%)</div>
+                        <div class="p-1 rounded bg-slate-950 text-slate-400 border border-slate-800">2. Breakeven<br>(+10%)</div>
+                        <div class="p-1 rounded bg-slate-950 text-slate-400 border border-slate-800">3. SMA 50<br>(+20%)</div>
+                        <div class="p-1 rounded bg-slate-950 text-slate-400 border border-slate-800">4. EMA 21<br>(+50%)</div>
+                    </div>
+                    <div class="text-[10px] text-slate-300 text-center font-mono pt-0.5">Noch 12.3% bis Breakeven</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
             <div id="pane-newcomer" class="qad-pane hidden space-y-3">
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
-                    <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-lg font-black font-mono text-purple-400 tracking-wide">APP</span>
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank A++</span>
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 85%</span>
-                            </div>
-                            <div class="text-xs text-slate-300 font-medium mt-0.5">AppLovin Corp.</div>
-                        </div>
-                        <div class="text-right text-xs font-mono">
-                            <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
-                            <div class="text-sm font-black text-cyan-400">$124.50 <span class="text-[10px] text-slate-400 font-normal font-sans">(+1.3%)</span></div>
-                        </div>
-                    </div>
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">LLY</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank A+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 80%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Eli Lilly and Company • Pharma</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">$1292.65<span class="text-[10px] text-slate-400 font-normal font-sans"> (-3.2%)</span></div>
+            </div>
+        </div>
 
-                    <div class="p-2 rounded-xl bg-emerald-950/80 border border-emerald-500/80 text-emerald-300 text-xs font-semibold flex items-center gap-1.5">
-                        <span>Ausbruch bestätigt • Tag 1 von 5 (Kaufbereit)</span>
-                    </div>
+        <div class="p-2 rounded-xl bg-slate-950 border border-amber-600/70 text-amber-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Status: <strong>LAUERSTELLUNG (COILING)</strong></span><span>Abstand: -3.2%</span></div>
 
-                    <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
-                        <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Axon 2.0 AI-Engine skaliert massiv im E-Commerce-Sektor.</span></div>
-                        <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Abzüge:</strong><span class="text-slate-400">Keine Mängel identifiziert</span></div>
-                    </div>
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Eli Lilly hat in den letzten Quartalen zahlreiche bahnbrechende Zulassungen (Foundayo, Ebglyss, Jaypirca) erhalten und positive Phase-3-Studienergebnisse für wichtige Medikamente (Retatrutide, Orforglipron, Tirzepatide) veröffentlicht. Zudem wurden strategische Akquisitionen getätigt und massive Investitionen in die Fertigungskapazität angekündigt. Die Einführung des Medicare GLP-1 Bridge Programms erweitert den Marktzugang erheblich.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (0/10%), Mega-Cap Malus (-10%)</span></div>
+        </div>
 
-                    <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
-                        <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
-                            <span class="text-cyan-400">Vollständige 10-Q & Hilbert-Akte</span>
-                            <span class="accordion-arrow text-slate-400">▶</span>
-                        </summary>
-                        <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
-                            <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
-                                <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
-                                <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 21.5%, Dämpfung: 1.15)</div>
-                                <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.88)</div>
-                            </div>
-                            <div class="space-y-1.5">
-                                <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
-                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                    <div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1">
-                                        <div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q2/26</div>
-                                        <div class="grid grid-cols-2 gap-1 text-[11px]">
-                                            <div>Umsatz: <span class="font-bold text-slate-100">$1200M</span></div>
-                                            <div>EPS: <span class="font-bold text-slate-100">$1.25</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1">
-                                        <div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q1/26</div>
-                                        <div class="grid grid-cols-2 gap-1 text-[11px]">
-                                            <div>Umsatz: <span class="font-bold text-slate-100">$1060M</span></div>
-                                            <div>EPS: <span class="font-bold text-slate-100">$0.67</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </details>
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 14.3%, Dämpfung: 0.62)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.97)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$23000.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$8.38</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$19800.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$8.55</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$19300.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$7.54</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$17600.8M</span></div><div>EPS: <span class="font-bold text-slate-100">$6.21</span></div></div></div></div>
                 </div>
             </div>
-
-            <!-- TAB 3: FOKUS-WATCHLIST -->
+        </details>
+    </div>
+    </div>
             <div id="pane-top3" class="qad-pane hidden space-y-3">
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
-                    <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-lg font-black font-mono text-purple-400 tracking-wide">APP</span>
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank A++</span>
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 85%</span>
-                            </div>
-                            <div class="text-xs text-slate-300 font-medium mt-0.5">AppLovin Corp.</div>
-                        </div>
-                        <div class="text-right text-xs font-mono">
-                            <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
-                            <div class="text-sm font-black text-cyan-400">$124.50 <span class="text-[10px] text-slate-400 font-normal font-sans">(+1.3%)</span></div>
-                        </div>
-                    </div>
-                    <div class="p-2 rounded-xl bg-emerald-950/80 border border-emerald-500/80 text-emerald-300 text-xs font-semibold flex items-center gap-1.5">
-                        <span>Ausbruch bestätigt • Tag 1 von 5 (Kaufbereit)</span>
-                    </div>
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">AMG</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank A++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 90%</span>
                 </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Affiliated Managers Group, Inc. • Asset</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">$395.00<span class="text-[10px] text-slate-400 font-normal font-sans"> (-2.8%)</span></div>
+            </div>
+        </div>
 
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
-                    <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-lg font-black font-mono text-purple-400 tracking-wide">CELH</span>
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank A+</span>
-                                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 80%</span>
-                            </div>
-                            <div class="text-xs text-slate-300 font-medium mt-0.5">Celsius Holdings</div>
-                        </div>
-                        <div class="text-right text-xs font-mono">
-                            <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
-                            <div class="text-sm font-black text-amber-400">$58.20 <span class="text-[10px] text-slate-400 font-normal font-sans">(-1.9%)</span></div>
-                        </div>
-                    </div>
-                    <div class="p-2 rounded-xl bg-slate-950/80 border border-amber-600/60 text-amber-300 text-xs font-semibold flex items-center gap-1.5">
-                        <span>Lauerstellung (Coiling am Trigger)</span>
-                    </div>
+        <div class="p-2 rounded-xl bg-slate-950 border border-amber-600/70 text-amber-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Status: <strong>LAUERSTELLUNG (COILING)</strong></span><span>Abstand: -2.8%</span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">AMG hat im zweiten Quartal 2026 Rekordergebnisse erzielt, mit einem deutlichen Anstieg des bereinigten EBITDA und des Economic EPS im Jahresvergleich, was die Schätzungen übertraf. Das Unternehmen verzeichnete Rekordzuflüsse in alternative Strategien und erreichte ein Rekord-AUM. Zudem wurden strategische Minderheitsbeteiligungen abgeschlossen und umfangreiche Aktienrückkäufe getätigt, was auf eine starke operative Leistung und disziplinierte Kapitalallokation hindeutet.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Branche (5/10%), Sponsoring (5/10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 13.6%, Dämpfung: 0.90)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 1.00)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$640.7M</span></div><div>EPS: <span class="font-bold text-slate-100">$6.95</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$544.9M</span></div><div>EPS: <span class="font-bold text-slate-100">$3.84</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$528.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$6.87</span></div></div></div></div>
                 </div>
             </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">LLY</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank A+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 80%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Eli Lilly and Company • Pharma</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">$1292.65<span class="text-[10px] text-slate-400 font-normal font-sans"> (-2.8%)</span></div>
+            </div>
+        </div>
 
-            <!-- TAB 4: DEEP WATCHLIST (BASISAUFBAU) -->
+        <div class="p-2 rounded-xl bg-slate-950 border border-amber-600/70 text-amber-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Status: <strong>LAUERSTELLUNG (COILING)</strong></span><span>Abstand: -2.8%</span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Eli Lilly hat in den letzten Quartalen zahlreiche bahnbrechende Zulassungen (Foundayo, Ebglyss, Jaypirca) erhalten und positive Phase-3-Studienergebnisse für wichtige Medikamente (Retatrutide, Orforglipron, Tirzepatide) veröffentlicht. Zudem wurden strategische Akquisitionen getätigt und massive Investitionen in die Fertigungskapazität angekündigt. Die Einführung des Medicare GLP-1 Bridge Programms erweitert den Marktzugang erheblich.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (0/10%), Mega-Cap Malus (-10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 14.3%, Dämpfung: 0.63)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.99)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$23000.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$8.38</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$19800.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$8.55</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$19300.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$7.54</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$17600.8M</span></div><div>EPS: <span class="font-bold text-slate-100">$6.21</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">HALO</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank A</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 70%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Halozyme Therapeutics, Inc. • Biotechnology</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">$116.85<span class="text-[10px] text-slate-400 font-normal font-sans"> (+4.3%)</span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-emerald-950/80 border border-emerald-500/80 text-emerald-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Status: <strong>IN KAUFZONE • KAUFBEREIT</strong></span><span>Retest aktiv (Tag 3 von 5)</span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Halozyme hat mehrere signifikante positive Nachrichtenereignisse erlebt, darunter ein Gerichtssieg gegen Merck, die Erweiterung einer globalen Kooperations- und Lizenzvereinbarung mit argenx, Rekordergebnisse im Q2 2026 mit einem Umsatzanstieg von 48% gegenüber dem Vorjahr und einer erhöhten Jahresprognose. Zudem gab es 2026 sechs neue Enhanze-Deals und eine 'massive' Lizenzvereinbarung mit Novartis im September 2026. Diese Ereignisse stellen bahnbrechende Entwicklungen und massive Großaufträge dar.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: EPS/Sales (30/60%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 30.0%, Dämpfung: 1.42)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.92)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$481.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.90</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$376.7M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.22</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$460.8M</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$354.3M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.43</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">ASC</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank B++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 95%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Ardmore Shipping Corporation • Tanker</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">$20.60<span class="text-[10px] text-slate-400 font-normal font-sans"> (-8.1%)</span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-amber-600/70 text-amber-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Status: <strong>LAUERSTELLUNG (COILING)</strong></span><span>Abstand: -8.1%</span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Ardmore Shipping Corporation verzeichnete im zweiten Quartal 2026 einen deutlichen Gewinn- und Umsatzanstieg, übertraf die Erwartungen und verdoppelte die Quartalsdividende. Zusätzlich wurden Optionen für zwei weitere Tanker wahrgenommen, was die strategische Flottenerweiterung unterstreicht. Diese Entwicklungen, unterstützt durch günstige Marktbedingungen aufgrund geopolitischer Spannungen, stellen starke positive Katalysatoren dar.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">No mismatches identified.</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 25.3%, Dämpfung: 1.54)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Lauerstellung</span> (Kohärenz vs QQQ: 0.99)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$116.2M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.18</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$87.92M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.58</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$82.91M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.28</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    </div>
             <div id="pane-deep" class="qad-pane hidden space-y-3">
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-2 shadow-lg">
-                    <div class="flex justify-between items-start border-b border-slate-800 pb-2">
-                        <div>
-                            <div class="flex items-center gap-2">
-                                <span class="text-base font-black font-mono text-purple-400">IOT</span>
-                                <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-800 text-slate-300 font-mono">Rank B+</span>
-                            </div>
-                            <div class="text-xs text-slate-300">Samsara Inc.</div>
-                        </div>
-                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Re-Check: 14.11.2026</span>
-                    </div>
-                    <div class="text-xs text-slate-400">Muster im Basisaufbau • Trigger: In Vorbereitung</div>
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">STLN</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 90%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Starling Oncology, Inc. • Onkologie</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>11.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Starling Oncology erzielte im Q2 2026 starke finanzielle Ergebnisse (Umsatz-Beat, positives bereinigtes EBITDA) und bedeutende strategische Fortschritte, darunter neue delegierte Verträge in Nevada und Oregon, eine Exklusivitätsvereinbarung in Kalifornien, die Einführung der Technologieplattform Starling Oncology Nexus™, eine erfolgreiche Schuldenrefinanzierung bis 2031 und eine angehobene Jahresprognose für 2026. Diese Entwicklungen stellen bahnbrechende Fortschritte und massive Geschäftserweiterungen dar.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (0/10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 32.0%, Dämpfung: 1.40)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.21)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$161.3M</span></div><div>EPS: <span class="font-bold text-slate-100">$-0.08</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$147.4M</span></div><div>EPS: <span class="font-bold text-slate-100">$-0.02</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$136.6M</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
                 </div>
             </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">STNG</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 75%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Scorpio Tankers Inc. • Schifffahrt</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
 
-            <!-- TAB 5: SPERRLISTE -->
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>31.10.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Es gab moderate Quartals-Beats bei EPS und Umsatz in den letzten Quartalen, jedoch keine bahnbrechenden Zulassungen, massiven Großaufträge, Einführung disruptiver Produkte oder strategische Übernahmen, die eine höhere Punktzahl rechtfertigen würden.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (0/10%), Katalysator (5/10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 18.4%, Dämpfung: 1.67)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.95)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q2 2026</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$299.9M</span></div><div>EPS: <span class="font-bold text-slate-100">$3.02</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q1 2026</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$280.6M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.6</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q4 2025</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$275.3M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.4</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q3 2025</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$260.1M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.1</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">ANET</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 90%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Arista Networks, Inc. • Netzwerkausrüstung</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>05.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Arista Networks hat im zweiten Quartal 2026 erstmals einen Umsatz von über 3 Milliarden US-Dollar erzielt und das Non-GAAP EPS um 40 % gegenüber dem Vorjahr gesteigert. Das Unternehmen hat seine Umsatzprognose für das Geschäftsjahr 2026 auf 12,6 Milliarden US-Dollar angehoben, was einem Wachstum von 40 % entspricht. Die Einführung von 1,6-Tbps-AI-Fabric-Plattformen und XPO-Flüssigkeitskühlungsoptiken für KI-Rechenzentren sowie der Anstieg der kumulativen AI-Switching-Kunden auf über 100 (von 4-5 im Jahr 2024) sind bahnbrechende Produktinnovationen und massive Großaufträge im wachsenden KI-Segment.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Mega-Cap Malus (-10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 18.1%, Dämpfung: 1.71)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.98)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$3036.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.02</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$2709.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.87</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$2488.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.82</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$2308.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.75</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">CMBT</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 95%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Cmb.Tech NV • Maritime</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>28.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Der Chartervertrag mit Fortescue für Ammoniak-betriebene Schiffe ist ein bahnbrechender strategischer Erfolg, der das Unternehmen als Innovationsführer im Bereich der Dekarbonisierung der Schifffahrt positioniert und einen massiven Großauftrag darstellt.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Alle drei Entwürfe stimmen in der Bewertung der qualitativen Kriterien überein.</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 13.9%, Dämpfung: 1.99)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.99)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q2 2026</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$703.9M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.26</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q1 2026</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$519.673M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.27</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q4 2025</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q3 2025</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">DDOG</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 80%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Datadog, Inc. • Anwendungssoftware</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>06.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Datadog, Inc. zeigte im Q2 2026 ein starkes Umsatzwachstum von 36% gegenüber dem Vorjahr und übertraf die Erwartungen bei Umsatz und Non-GAAP EPS. Das Unternehmen hob seine Prognose für das Gesamtjahr 2026 an. Ein wesentlicher Katalysator ist die führende Position als KI-gestützte Observability- und Sicherheitsplattform, wobei Kunden zunehmend KI-fähige Lösungen einsetzen. Die Akquisition von Adaptive ML zur Verbesserung prädiktiver Fähigkeiten und die Einführung neuer Produkte wie Bits AI SRE Agents unterstreichen die Innovationskraft. Trotz einer angekündigten Nutzungsreduzierung des größten Kunden ab Q3 2026 wurde dies für den Rest des Jahres 'derisked', was die Widerstandsfähigkeit des Managements zeigt.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (0/10%), Mega-Cap Malus (-10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 30.6%, Dämpfung: 1.99)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: -0.98)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$1120.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.65</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$1005.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.62</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$953.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.59</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$886.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.55</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">SHEL</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 85%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Shell plc • Energie</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>31.10.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Shell plc hat im dritten Quartal 2026 die strategische Akquisition von ARC Resources abgeschlossen, die das Produktionswachstum bis 2030 voraussichtlich auf 4% jährlich steigern und jährlich 1,5 Milliarden USD zusätzlichen freien Cashflow generieren wird. Zudem wurde eine endgültige Investitionsentscheidung zur Verdoppelung der LNG Canada Kapazität getroffen. Diese strategischen Schritte sind bahnbrechend.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (5/10%), Mega-Cap Malus (-10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 13.4%, Dämpfung: 1.48)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 1.00)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$94664M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.92</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$71823M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.99</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">GCT</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 85%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">GigaCloud Technology Inc. • Commerce</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>07.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">GigaCloud Technology Inc. meldete im Q2 2026 Rekordumsätze und Rekord-EPS, übertraf die Konsensschätzungen deutlich und kündigte ein neues Aktienrückkaufprogramm über 120 Millionen USD an. Zudem wurde die Akquisition von New Classic Home Furnishings abgeschlossen, was die Logistikkapazitäten vertieft. Diese Kombination aus starken Finanzergebnissen, einem deutlichen 'Beat' der Erwartungen, einer strategischen Akquisition und einem neuen Aktienrückkaufprogramm stellt einen Gamechanger dar.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Branche (5/10%), Sponsoring (0/10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 23.1%, Dämpfung: 1.32)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.95)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q2 2026</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$411.6M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.65</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q1 2026</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$359.5M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.04</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q4 2025</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$362.7M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.16</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">Q3 2025</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">DGII</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 90%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Digi International Inc. • Internet</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>18.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Digi International hat in den letzten Quartalen durchweg starke Ergebnisse geliefert, die die Markterwartungen bei Umsatz und EPS übertroffen haben. Das Unternehmen hat seine Prognosen für das Gesamtjahr 2026 angehoben und strategische Akquisitionen wie Jolt, Particle und Disruptive Technologies getätigt. Zudem wurde ein neues KI-Tool (DANI) eingeführt, das die Plattformnutzung vertiefen soll. Diese Entwicklungen deuten auf bahnbrechende Produktinnovationen und strategische Expansion hin, was eine hohe Bewertung rechtfertigt.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (0/10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 21.7%, Dämpfung: 1.17)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.51)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$139.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.75</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$131.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.62</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$122.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.56</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$114.3M</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">PSX</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 80%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Phillips 66 • Gas</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>30.10.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Starke Gewinn- und Umsatzübertreffungen sowie strategische Maßnahmen wie Schuldenabbau und Akquisitionen in den jüngsten Quartalen.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Sponsoring (0/10%), Mega-Cap Malus (-10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 12.7%, Dämpfung: 1.75)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.96)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$52044.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$9.41</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$35210.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.49</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$36300.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.47</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$34979.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.52</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">PAYS</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 70%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Paysign, Inc. • Fintech</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>11.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Paysign, Inc. zeigte im Q2 2026 Rekordumsätze von 28,3 Millionen USD, eine Steigerung von 48%, und hob den Ganzjahresausblick an. Das Unternehmen verzeichnete auch im Q1 2026 ein Umsatzwachstum von 51% und eine deutliche Margenausweitung. Die Übernahme von Gamma Innovation im März 2025 ist eine strategische Akquisition, die das Geschäft stärkt. Das starke Wachstum in den Bereichen Patientenbezahlbarkeit und Plasma ist ein wiederkehrendes Thema und treibt die positive Entwicklung an. Analysten haben kürzlich Kursziele erhöht und eine "Buy"-Empfehlung ausgesprochen, was auf eine positive Marktstimmung hindeutet.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: EPS/Sales (30/60%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 18.9%, Dämpfung: 1.32)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.96)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$28.25M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.11</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$28.04M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.09</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$22.72M</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$21.60M</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">MRX</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 95%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Marex Group Limited • Capital</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>07.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Marex Group Limited verzeichnete im Q2 2026 Rekordumsätze und -profitabilität, mit einem Adjusted EPS, das die Erwartungen deutlich übertraf. Zudem wurden strategische Akquisitionen (Webb Traders abgeschlossen, Bright Point und Brainchild Capital vereinbart) und eine Redomizilierung nach Bermuda zur Optimierung der Unternehmensstruktur durchgeführt.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Branche (5/10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 25.2%, Dämpfung: 1.30)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.97)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$696.00M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.72</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$692.30M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.52</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$572.10M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.14</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$485.00M</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">BP</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 75%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">BP p.l.c. • Gas</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>01.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Keine bahnbrechende Produktzulassung oder massiver Großauftrag identifiziert; keine fundamentale strukturelle Veränderung durch ein disruptives Produkt.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Nasdaq.com gibt an, dass institutionelle Beteiligungen 'derzeit nicht verfügbar' sind, während Seeking Alpha und Fintel eine sehr hohe institutionelle Beteiligung (77,08% bzw. 77,9%) ausweisen.</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 18.4%, Dämpfung: 1.11)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 1.00)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$69110M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.22</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$52260M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.24</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$47380M</span></div><div>EPS: <span class="font-bold text-slate-100">$0.60</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">SNX</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C++</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 95%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">TD SYNNEX Corporation • Distribution</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>26.09.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Das Unternehmen hat strategische Initiativen in den Bereichen KI, Cloud und Raumfahrttechnologie gestartet, darunter die Einrichtung von KI-Testlaboren mit Dell und eine dreijährige strategische Zusammenarbeit mit AWS. Zudem wurden die Erwartungen für EPS und Umsatz im Q3 2026 deutlich übertroffen.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (5/10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 21.1%, Dämpfung: 1.30)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.99)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$21600.00M</span></div><div>EPS: <span class="font-bold text-slate-100">$5.26</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$19600.00M</span></div><div>EPS: <span class="font-bold text-slate-100">$4.20</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$17200.00M</span></div><div>EPS: <span class="font-bold text-slate-100">$4.09</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$N/AM</span></div><div>EPS: <span class="font-bold text-slate-100">$N/A</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">SCCO</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 80%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">Southern Copper Corporation • Mining</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>24.10.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">Southern Copper Corporation erzielte im 2. Quartal 2026 Rekordergebnisse bei Umsatz, EBITDA und Nettoertrag, angetrieben durch stark gestiegene Metallpreise und eine signifikante Reduzierung der operativen Cash-Kosten. Fortschritte beim Tía María Projekt und eine erhöhte Produktionsprognose für 2026 sind weitere positive Katalysatoren.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Es gibt keine signifikanten Abweichungen oder Widersprüche zwischen den einzelnen Entwürfen und der Konsensbegründung.</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 20.6%, Dämpfung: 1.20)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: -0.32)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$4289.0M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.01</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$4251.4M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.92</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$3869.8M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.61</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$3377.3M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.35</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
+        <div class="flex justify-between items-start border-b border-slate-800 pb-2.5">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="text-lg font-black font-mono text-purple-400 tracking-wide">NVDA</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800/80 font-mono">Rank C+</span>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-mono">Score: 80%</span>
+                </div>
+                <div class="text-xs text-slate-300 font-medium mt-0.5">NVIDIA Corporation • Semiconductors</div>
+            </div>
+            <div class="text-right text-xs font-mono">
+                <div class="text-[10px] text-slate-400 font-sans">Kauftrigger:</div>
+                <div class="text-sm font-black text-cyan-400">In Vorbereitung<span class="text-[10px] text-slate-400 font-normal font-sans"></span></div>
+            </div>
+        </div>
+
+        <div class="p-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-xs font-semibold flex items-center justify-between font-mono"><span>Basisaufbau • Re-Check: <strong>19.11.2026</strong></span></div>
+
+        <div class="p-2.5 bg-slate-950/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs">
+            <div><strong class="text-amber-400 uppercase text-[10px] block font-sans">Gamechanger Katalysator:</strong><span class="text-slate-200">NVIDIA zeigt eine kontinuierliche Einführung disruptiver AI-Plattformen wie Blackwell und Vera Rubin sowie bedeutende Software-Entwicklungen wie DLSS 4.5 und DLSS 5. Das Unternehmen verzeichnet Rekordumsätze und ein massives Wachstum im Datacenter-Segment, angetrieben durch die Beschleunigung des AI-Infrastruktur-Ausbaus, der als 'Wendepunkt' der AI-Industrie beschrieben wird. Zusätzlich wurden erhöhte Aktienrückkäufe und eine signifikante Erhöhung der vierteljährlichen Bardividende angekündigt, was das Vertrauen des Managements unterstreicht.</span></div>
+            <div><strong class="text-rose-400 uppercase text-[10px] block font-sans">Mängel / Status:</strong><span class="text-slate-400">Abzug: Margen/ROE (0/10%), Mega-Cap Malus (-10%)</span></div>
+        </div>
+
+        <details class="bg-slate-950/80 border border-slate-800 rounded-xl overflow-hidden group">
+            <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 flex justify-between items-center select-none">
+                <span class="text-cyan-400 font-sans">Vollständige 10-Q & Hilbert-Akte</span>
+                <span class="accordion-arrow text-slate-400">▶</span>
+            </summary>
+            <div class="p-3 pt-2 space-y-3 border-t border-slate-800/80 text-xs font-mono">
+                <div class="p-2.5 bg-slate-900 rounded-lg border border-slate-800 space-y-1">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">Dual-Scale Hilbert-Oszilloskop:</div>
+                    <div class="text-slate-200 font-sans">Makro (Woche): <span class="text-emerald-400 font-semibold">Akkumulation</span> (Tiefe: 18.2%, Dämpfung: 1.46)</div>
+                    <div class="text-slate-200 font-sans">Mikro (Tag): <span class="text-cyan-400 font-semibold">Startrampe</span> (Kohärenz vs QQQ: 0.89)</div>
+                </div>
+                <div class="space-y-1.5">
+                    <div class="text-[10px] font-bold text-slate-400 uppercase font-sans">4-Quartale SEC 10-Q Matrix (YoY):</div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q3</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$96200M</span></div><div>EPS: <span class="font-bold text-slate-100">$2.22</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q2</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$81600M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.87</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2026 Q1</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$68100M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.62</span></div></div></div><div class="p-2 bg-slate-950/80 rounded-lg border border-slate-800/60 space-y-1"><div class="font-bold text-slate-200 border-b border-slate-900 pb-0.5">2025 Q4</div><div class="grid grid-cols-2 gap-1 text-[11px]"><div>Umsatz: <span class="font-bold text-slate-100">$57000M</span></div><div>EPS: <span class="font-bold text-slate-100">$1.30</span></div></div></div></div>
+                </div>
+            </div>
+        </details>
+    </div>
+    </div>
             <div id="pane-sperrliste" class="qad-pane hidden space-y-3">
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4 space-y-3 shadow-lg">
-                    <div class="text-xs font-bold text-rose-400 uppercase tracking-wider flex items-center gap-1.5">
-                        <span>Gesperrte Aktien (3. Strike • 90 Tage)</span>
-                    </div>
-                    <div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono">
-                        <div>
-                            <span class="font-bold text-cyan-400">SMCI</span>
-                            <span class="text-slate-400 ml-2 text-[11px] font-sans">Super Micro Computer</span>
-                        </div>
-                        <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 15.01.2027</span>
-                    </div>
-
+                    <div class="text-xs font-bold text-rose-400 uppercase tracking-wider">Gesperrte Aktien (3. Strike • 90 Tage)</div>
+                    <div class="space-y-1.5"><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">FSLY</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Fastly, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 17.01.2027</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">KEYS</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Keysight Technologies, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 17.01.2027</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">COHU</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Cohu, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 14.01.2027</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">MU</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Micron Technology, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 13.01.2027</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">HAFN</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Hafnia Limited</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 07.01.2027</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">ARX</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Accelerant Holdings</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 05.01.2027</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">MTRN</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Materion Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 04.01.2027</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">AGEN</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Agenus Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 28.12.2026</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">FTNT</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Fortinet, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 23.12.2026</span></div><div class="p-2.5 bg-slate-950/80 border border-rose-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">DBRG</span><span class="text-slate-400 ml-2 text-[11px] font-sans">DigitalBridge Group, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/80">Bis 24.12.2026</span></div></div>
                     <div class="pt-2 border-t border-slate-800/80">
-                        <div class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5 mb-2">
-                            <span>Verwarnte Aktien auf Bewährung</span>
-                        </div>
-                        <div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono">
-                            <div>
-                                <span class="font-bold text-cyan-400">MDB</span>
-                                <span class="text-slate-400 ml-2 text-[11px] font-sans">MongoDB Inc.</span>
-                            </div>
-                            <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span>
-                        </div>
+                        <div class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2">Verwarnte Aktien auf Bewährung</div>
+                        <div class="space-y-1.5"><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">FLYW</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Flywire Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">FEIM</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Frequency Electronics, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">CLMT</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Calumet, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">COP</span><span class="text-slate-400 ml-2 text-[11px] font-sans">ConocoPhillips</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">PR</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Permian Resources Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">XOM</span><span class="text-slate-400 ml-2 text-[11px] font-sans">ExxonMobil Holdings Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">AFRM</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Affirm Holdings, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">EQNR</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Equinor ASA</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">PNTG</span><span class="text-slate-400 ml-2 text-[11px] font-sans">The Pennant Group, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 2/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">NVT</span><span class="text-slate-400 ml-2 text-[11px] font-sans">nVent Electric plc</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">MUR</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Murphy Oil Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">DHT</span><span class="text-slate-400 ml-2 text-[11px] font-sans">DHT Holdings, Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">NVGS</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Navigator Holdings Ltd.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">KNTK</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Kinetik Holdings Inc.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">BTE</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Baytex Energy Corp.</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">HPE</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Hewlett Packard Enterprise Company</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">DVN</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Devon Energy Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">TECK</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Teck Resources Limited</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">MEOH</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Methanex Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div><div class="p-2.5 bg-slate-950/80 border border-amber-950/60 rounded-xl flex items-center justify-between text-xs font-mono"><div><span class="font-bold text-cyan-400">OXY</span><span class="text-slate-400 ml-2 text-[11px] font-sans">Occidental Petroleum Corporation</span></div><span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/80">Strike 1/3</span></div></div>
                     </div>
                 </div>
             </div>
-
         </main>
 
-        <!-- RECHTSKONFORMER DISCLAIMER & TRANSPARENZ gem. Art. 20 MAR -->
-        <footer class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/60 text-[11px] text-slate-400 space-y-2 leading-relaxed">
-            <div class="font-bold text-slate-300 flex items-center gap-1.5 uppercase tracking-wider text-[10px]">
-                <span>Transparenzhinweis gem. Art. 20 MAR & Disclaimer</span>
+        <footer class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/60 text-[11px] text-slate-400 space-y-3 leading-relaxed">
+            <div class="space-y-1.5">
+                <div class="font-bold text-slate-300 uppercase tracking-wider text-[10px]">Transparenzhinweis gem. Art. 20 MAR & Disclaimer</div>
+                <p><strong>Eigenhandels-Offenlegung:</strong> Der Betreiber führt ein dokumentiertes persönliches Trading-Tagebuch mit Eigenkapital über Trade Republic. Positionen in den genannten Wertpapieren werden gehalten oder beabsichtigt.</p>
+                <p><strong>Keine Anlageberatung:</strong> Alle Berechnungen, Marktampeln und Kauftrigger sind rein technische Ergebnisse eines algorithmischen Modells nach Minervini- und O'Neil-Axiomen. Es handelt sich um keine Anlageberatung oder Empfehlung zum Kauf/Verkauf von Wertpapieren.</p>
             </div>
-            <p>
-                <strong>Eigenhandels-Offenlegung:</strong> Der Betreiber dieses Portals führt ein dokumentiertes persönliches Trading-Tagebuch mit Eigenkapital über Trade Republic. Der Betreiber hält oder beabsichtigt, Positionen in den genannten Wertpapieren einzugehen.
-            </p>
-            <p>
-                <strong>Keine Anlageberatung:</strong> Alle hier dargestellten Berechnungen, Marktampeln, Oszilloskop-Metriken und Kauftrigger sind rein technische Ergebnisse eines mathematisch-algorithmischen Modells nach Minervini- und O'Neil-Axiomen. Es handelt sich ausdrücklich um keine Anlageberatung, Anlageempfehlung oder Aufforderung zum Kauf oder Verkauf von Finanzinstrumenten.
-            </p>
-        </footer>
 
+            <details class="pt-2 border-t border-slate-800/80 text-[10px] text-slate-400">
+                <summary class="cursor-pointer font-semibold text-slate-400 hover:text-cyan-400 flex items-center justify-between select-none py-1">
+                    <span>Rechtliche Angaben / Impressum (§ 5 DDG)</span>
+                    <span class="accordion-arrow">▶</span>
+                </summary>
+                <div class="p-3 mt-1.5 bg-slate-950/80 rounded-xl border border-slate-800/60 space-y-1 font-mono text-[10px]">
+                    <div class="font-bold text-slate-200 font-sans text-[11px]">Betreiber dieses Portals:</div>
+                    <div class="text-slate-300">Tobias Krauter</div>
+                    <div class="text-slate-400">Musterstraße 1</div>
+                    <div class="text-slate-400">12345 Musterstadt</div>
+                    <div class="pt-1 text-slate-400">Kontakt: <span class="text-cyan-400">kontakt@superstock-terminal.de</span></div>
+                    <div class="text-[9px] text-slate-400 font-sans italic pt-1 border-t border-slate-900 mt-1">
+                        Nicht-gewerbliches, persönliches Forschungs- & Bildungstagebuch. Gem. § 5 DDG hinterlegt.
+                    </div>
+                </div>
+            </details>
+        </footer>
     </div>
 
-    <!-- CLIENT LOGIK FÜR TAB-WECHSEL -->
     <script>
+        const PAYWALL_ACTIVE = false;
+
         document.querySelectorAll('.qad-nav-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const tab = btn.dataset.tab;
+
+                if (PAYWALL_ACTIVE && tab !== 'market') {
+                    document.querySelectorAll('.qad-pane').forEach(p => p.classList.add('hidden'));
+                    document.getElementById('paywall-lock-banner').classList.remove('hidden');
+                    return;
+                }
+
+                document.getElementById('paywall-lock-banner').classList.add('hidden');
+
                 document.querySelectorAll('.qad-nav-btn').forEach(b => {
-                    b.className = 'qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1.5';
+                    b.className = 'qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1';
                 });
-                btn.className = 'qad-nav-btn flex-1 min-w-[110px] py-2 px-2.5 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1.5 bg-slate-800 text-cyan-300 shadow';
-                
+                btn.className = 'qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-bold transition flex items-center justify-center gap-1 bg-slate-800 text-cyan-300 shadow';
                 document.querySelectorAll('.qad-pane').forEach(p => p.classList.add('hidden'));
                 const targetPane = document.getElementById('pane-' + tab);
                 if (targetPane) targetPane.classList.remove('hidden');
