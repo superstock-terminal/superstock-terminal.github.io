@@ -17,7 +17,7 @@
 <body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 p-2 sm:p-4 lg:p-6">
     <div class="max-w-3xl mx-auto space-y-3.5">
         <header class="bg-slate-900 border border-slate-800 rounded-2xl p-4 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div class="space-y-1.5">
+            <div class="space-y-1">
                 <div class="flex items-center gap-2">
                     <div class="w-7 h-7 rounded-lg bg-cyan-950 border border-cyan-800/60 flex items-center justify-center text-cyan-400 font-bold text-sm">⚡</div>
                     <h1 class="font-black text-base tracking-wide text-slate-100 flex items-center gap-2">
@@ -25,14 +25,14 @@
                         <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse ring-4 ring-emerald-500/20 inline-block" title="System aktiv & synchronisiert"></span>
                     </h1>
                 </div>
-                <p class="text-xs text-slate-400 leading-relaxed max-w-xl">
-                    Persönliches Forschungsprojekt zur Validierung eines systematischen Ansatzes für US-Wachstumsaktien. Das Modell verknüpft einen übergeordneten Marktfilter, eine automatisierte fundamentale Vorselektion und ein mehrstufiges Risikomanagement mit definierten Stop-Loss-Niveaus.
+                <p class="text-xs text-slate-300 leading-relaxed max-w-xl font-sans">
+                    Konzentriertes 3-Slot-Portfolio (max. 32% Allokation). Die Strategie verknüpft einen übergeordneten Marktfilter, fundamentale Vorselektion, technische Chartanalyse und ein mehrstufiges Risikomanagement.
                 </p>
             </div>
             <div class="flex items-center gap-2 text-right shrink-0">
                 <div class="text-xs font-mono text-slate-400">
                     <span class="text-slate-400 block text-[10px] uppercase font-sans">Letzter Scan</span>
-                    <span class="text-slate-200 font-bold">19.10.2026, 14:47 Uhr</span>
+                    <span class="text-slate-200 font-bold">19.10.2026, 15:26 Uhr</span>
                 </div>
             </div>
         </header>
@@ -57,15 +57,6 @@
                 <span>6. Sperrliste</span>
             </button>
         </nav>
-
-        <div id="paywall-lock-banner" class="hidden p-4 rounded-2xl bg-slate-900 border border-cyan-500/50 shadow-2xl space-y-3 text-center">
-            <div class="w-10 h-10 rounded-2xl bg-cyan-950 border border-cyan-800/80 mx-auto flex items-center justify-center text-cyan-400 text-lg">🔒</div>
-            <div class="space-y-1">
-                <h3 class="font-bold text-sm text-slate-100">Superstock Terminal • Pro Pass</h3>
-                <p class="text-xs text-slate-400 max-w-md mx-auto">Der vollständige Zugriff auf alle 6 Tabs, Newcomer-Dossiers, SEC-Audits und Watchlists ist aktiven Abonnenten vorbehalten.</p>
-            </div>
-            <a href="https://whop.com" target="_blank" class="inline-block py-2.5 px-6 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs transition shadow-lg">Jetzt Terminal freischalten (49 € / Monat)</a>
-        </div>
 
         <main id="qad-tab-content-area" class="space-y-3.5">
             <div id="pane-market" class="qad-pane space-y-3">
@@ -107,7 +98,7 @@
 
                 <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 space-y-2">
                     <div class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
-                        <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                        <span class="text-amber-400">🛡️</span>
                         <span>Aktive Trading-Aktionen</span>
                     </div>
                     <div class="space-y-1.5"><div class="p-3 bg-slate-900/40 border border-slate-800/60 rounded-xl text-xs text-slate-400 italic">Keine offenen Handelsaktionen. Alle Positionen im planmäßigen Sollkorridor.</div></div>
@@ -115,7 +106,7 @@
 
                 <div class="bg-slate-950 border border-slate-800 rounded-2xl p-3.5 space-y-2">
                     <div class="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
-                        <svg class="w-3.5 h-3.5 text-fuchsia-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"></path><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path></svg>
+                        <span class="text-fuchsia-400">📊</span>
                         <span>Listenverteilung des Tages</span>
                     </div>
                     <div class="space-y-1.5"><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">STLN</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-emerald-400 font-bold">Fokus-Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span></div></div><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">STNG</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-emerald-400 font-bold">Fokus-Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span></div></div><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">KEYS</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-rose-400 font-bold">Sperrliste</span></div></div><div class="p-2.5 bg-slate-900/70 border border-slate-800 rounded-xl text-xs flex items-center justify-between"><div class="flex items-center gap-1.5 font-mono"><span class="font-bold text-cyan-400">FSLY</span><span class="text-slate-600">|</span><span class="font-sans text-[11px] text-fuchsia-400 font-bold">Deep Watchlist</span><span class="text-slate-500 text-xs">➔</span><span class="font-sans text-[11px] text-rose-400 font-bold">Sperrliste</span></div></div></div>
@@ -141,7 +132,7 @@
                             <div class="text-xs text-slate-300 font-medium truncate">Expeditors International of Washington, Inc.</div>
                         </div>
                         <div class="text-right shrink-0 flex flex-col items-end gap-1">
-                            <span class="font-bold text-sm text-rose-400 font-bold font-mono">-1.79%</span>
+                            <span class="font-bold text-sm text-rose-400 font-bold font-mono">-1.71%</span>
                         </div>
                     </div>
                 </div>
@@ -149,7 +140,7 @@
                 <div class="p-2.5 bg-slate-900/60 border border-slate-800/60 rounded-xl space-y-1.5 text-xs font-mono">
                     <div class="flex justify-between items-center text-[11px] text-slate-300 font-sans font-semibold">
                         <span>Einstiegskurs: <strong class="font-mono text-slate-100">$200.07</strong></span>
-                        <span>Aktueller Kurs: <strong class="font-mono text-slate-100">$196.49</strong></span>
+                        <span>Aktueller Kurs: <strong class="font-mono text-slate-100">$196.66</strong></span>
                     </div>
                     <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                         <div class="flex items-center justify-between w-full">
@@ -157,18 +148,25 @@
                             <span class="font-mono font-black text-sm text-cyan-400">$190.61</span>
                         </div>
                         <div class="text-right text-[11px] font-mono">
-                            <span class="text-amber-400 font-bold">(+3.0% Puffer zum Stop-Loss)</span>
+                            <span class="text-cyan-400 font-bold">(+3.1% Puffer zum Stop-Loss)</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="p-3 bg-slate-950/80 border border-slate-800/80 rounded-xl space-y-2">
-                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-sans">Trailing-Meilensteine</div>
-                    <div class="flex items-center justify-between relative pt-1 pb-1">
-                        <div class="absolute top-[14px] left-6 right-6 h-0.5 bg-slate-800 z-0"></div>
-                        <div class="absolute top-[14px] left-6 h-0.5 bg-cyan-500 z-0 transition-all" style="width: calc(0% * 0.88);"></div>
-                        <div class="relative z-10 flex w-full justify-between gap-1">
-                            <div class="flex-1 flex flex-col items-center text-center gap-0.5 min-w-0">
+                <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
+                    <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
+                        <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
+                        <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </summary>
+                    <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
+                        <!-- TRAILING-MEILENSTEINE JETZT IM DROPDOWN -->
+                        <div class="p-3 bg-slate-950/80 border border-slate-800/80 rounded-xl space-y-2">
+                            <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider font-sans">Trailing-Meilensteine</div>
+                            <div class="flex items-center justify-between relative pt-1 pb-1">
+                                <div class="absolute top-[14px] left-6 right-6 h-0.5 bg-slate-800 z-0"></div>
+                                <div class="absolute top-[14px] left-6 h-0.5 bg-cyan-500 z-0 transition-all" style="width: calc(0% * 0.88);"></div>
+                                <div class="relative z-10 flex w-full justify-between gap-1">
+                                    <div class="flex-1 flex flex-col items-center text-center gap-0.5 min-w-0">
                     <div class="w-5 h-5 rounded-full flex items-center justify-center text-[10px] shrink-0 mb-0.5 bg-cyan-500 text-slate-950 font-black ring-4 ring-cyan-500/20">1</div>
                     <span class="text-[9px] font-medium leading-tight text-cyan-300 font-bold">1. Initial</span>
                     <span class="text-[8px] font-mono leading-none text-cyan-400/80 font-bold">(-6.5%)</span>
@@ -185,20 +183,11 @@
                     <span class="text-[9px] font-medium leading-tight text-slate-400">4. EMA 21</span>
                     <span class="text-[8px] font-mono leading-none text-slate-500">(+50%)</span>
                 </div>
+                                </div>
+                            </div>
+                            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 text-[11px] text-slate-300 font-mono text-center">Noch 11.9% bis Breakeven ($220.08)</div>
                         </div>
-                    </div>
-                    <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 text-[11px] text-slate-300 font-mono text-center flex items-center justify-center gap-1.5">
-                        <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                        <span>Noch 12.0% bis Breakeven ($220.08)</span>
-                    </div>
-                </div>
 
-                <details class="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden group">
-                    <summary class="p-2.5 text-xs font-bold text-slate-300 cursor-pointer hover:bg-slate-850 transition flex justify-between items-center select-none">
-                        <span class="flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg><span>Vollständige Analyse</span></span>
-                        <svg class="w-3.5 h-3.5 text-slate-400 accordion-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                    </summary>
-                    <div class="p-3 pt-2 space-y-3 border-t border-slate-800/60">
                         
     <div class="bg-slate-950/80 border border-slate-800/80 rounded-xl p-3 space-y-2.5">
         <div class="space-y-1">
@@ -220,6 +209,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.40</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.926</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -333,7 +328,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">LLY</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFBEREIT</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Eli Lilly and Company</div>
             </div>
@@ -354,8 +349,8 @@
                 <span class="text-slate-100 font-semibold">29.10.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$1245.89</span><span class="ml-1 text-[10px] text-slate-400"> (-3.2%)</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="px-1.5 py-0.5 rounded text-[10px] font-mono text-rose-400 font-bold bg-rose-950/80 border border-rose-800/60 uppercase">KAUFSPERRE</span></div><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$1246.31</span><span class="ml-1 text-[10px] text-slate-400"> (-3.2%)</span></div>
             </div>
         </div>
         
@@ -386,6 +381,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.17</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.974</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Duale Resonanz perfekt: Wochen-Akkumulation (14.3%, 8 Wochen) intakt, Startrampe am Base-Pivot (-3.2%), Dämpfung Woche 0.62, Tag 1.17, Impuls 5.42.</span>
             </div>
         </div>
     </div>
@@ -517,8 +518,8 @@
                 <span class="text-slate-100 font-semibold">02.11.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$395.00</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$382.15</span><span class="ml-1 text-[10px] text-slate-400"> (-3.3%)</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span></div><span class="font-mono font-black text-sm text-cyan-400">$395.00</span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$385.24</span><span class="ml-1 text-[10px] text-slate-400"> (-2.5%)</span></div>
             </div>
         </div>
         
@@ -545,10 +546,16 @@
             <div class="text-[10px] font-bold text-slate-100 tracking-wider">MIKRO (TAG)</div>
             <div class="text-sm font-bold text-emerald-400">Startrampe</div>
             <div class="grid grid-cols-2 gap-x-2 gap-y-0.5 text-[11px] font-mono pt-0.5">
-                <div><span class="text-slate-400 font-sans">Abstand:</span> <span class="text-slate-100 font-semibold">-3.3%</span></div>
+                <div><span class="text-slate-400 font-sans">Abstand:</span> <span class="text-slate-100 font-semibold">-2.5%</span></div>
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.34</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.998</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Duale Resonanz perfekt: Wochen-Akkumulation (13.6%, 1 Wochen) intakt, Startrampe am Base-Pivot (-2.8%), Dämpfung Woche 0.90, Tag 1.34, Impuls 0.25.</span>
             </div>
         </div>
     </div>
@@ -658,7 +665,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">LLY</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFBEREIT</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Eli Lilly and Company</div>
             </div>
@@ -679,8 +686,8 @@
                 <span class="text-slate-100 font-semibold">29.10.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$1245.89</span><span class="ml-1 text-[10px] text-slate-400"> (-3.6%)</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="px-1.5 py-0.5 rounded text-[10px] font-mono text-rose-400 font-bold bg-rose-950/80 border border-rose-800/60 uppercase">KAUFSPERRE</span></div><span class="font-mono font-black text-sm text-cyan-400">$1292.65</span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$1246.31</span><span class="ml-1 text-[10px] text-slate-400"> (-3.6%)</span></div>
             </div>
         </div>
         
@@ -711,6 +718,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.58</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.990</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Duale Resonanz perfekt: Wochen-Akkumulation (14.3%, 8 Wochen) intakt, Startrampe am Base-Pivot (-2.8%), Dämpfung Woche 0.63, Tag 1.58, Impuls 0.43.</span>
             </div>
         </div>
     </div>
@@ -820,7 +833,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">HALO</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFBEREIT</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-emerald-950 text-emerald-300 border-emerald-800/60 font-bold font-mono">KAUFERLAUBNIS</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Halozyme Therapeutics, Inc.</div>
             </div>
@@ -841,8 +854,8 @@
                 <span class="text-slate-100 font-semibold">02.11.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="font-mono font-black text-sm text-cyan-400">$116.85</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$122.50</span><span class="ml-1 text-[10px] text-slate-400"> (+4.8%)</span></div>
+                <div class="flex items-center justify-between w-full"><div class="flex items-center gap-2"><span class="text-xs uppercase font-sans font-bold text-cyan-400">Kauftrigger:</span><span class="px-1.5 py-0.5 rounded text-[10px] font-mono text-rose-400 font-bold bg-rose-950/80 border border-rose-800/60 uppercase">KAUFSPERRE</span></div><span class="font-mono font-black text-sm text-cyan-400">$116.85</span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$122.54</span><span class="ml-1 text-[10px] text-slate-400"> (+4.9%)</span></div>
             </div>
         </div>
         <div class="p-2 rounded-xl border flex items-center justify-center gap-1.5 text-xs font-semibold bg-emerald-950/80 border-emerald-500/80 text-emerald-300"><span>Retest aktiv • Tag 3 von 5 (Kaufbereit)</span></div>
@@ -869,10 +882,16 @@
             <div class="text-[10px] font-bold text-slate-100 tracking-wider">MIKRO (TAG)</div>
             <div class="text-sm font-bold text-emerald-400">Startrampe</div>
             <div class="grid grid-cols-2 gap-x-2 gap-y-0.5 text-[11px] font-mono pt-0.5">
-                <div><span class="text-slate-400 font-sans">Abstand:</span> <span class="text-slate-100 font-semibold">4.8%</span></div>
+                <div><span class="text-slate-400 font-sans">Abstand:</span> <span class="text-slate-100 font-semibold">4.9%</span></div>
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.08</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.924</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Duale Resonanz perfekt: Wochen-Akkumulation (30.0%, 3 Wochen) intakt, Startrampe am Base-Pivot (+4.3%), Dämpfung Woche 1.42, Tag 1.08, Impuls 0.24.</span>
             </div>
         </div>
     </div>
@@ -982,7 +1001,7 @@
             <div class="min-w-0 flex-1 pr-2 space-y-0.5">
                 <div class="flex items-center gap-1.5 flex-nowrap">
                     <span class="text-base sm:text-lg font-black text-purple-400 font-mono tracking-wide shrink-0">ASC</span>
-                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-amber-950 text-amber-300 border-amber-800/60 font-bold font-mono">LAUERSTELLUNG</span>
+                    <span class="px-1.5 py-0.5 rounded-md text-[10px] border shrink-0 bg-rose-950 text-rose-300 border-rose-800/60 font-bold font-mono">KAUFSPERRE</span>
                 </div>
                 <div class="text-xs text-slate-300 font-medium truncate">Ardmore Shipping Corporation</div>
             </div>
@@ -1003,8 +1022,8 @@
                 <span class="text-slate-100 font-semibold">04.11.2026</span>
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
-                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-amber-400">Lauerstellung:</span><span class="font-mono font-bold text-xs text-amber-400">$20.60 (-7.7%)</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$19.02</span><span class="ml-1 text-[10px] text-slate-400"> (-7.7%)</span></div>
+                <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-amber-400">Lauerstellung:</span><span class="font-mono font-bold text-xs text-amber-400">$20.60 (-8.1%)</span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$18.93</span><span class="ml-1 text-[10px] text-slate-400"> (-8.1%)</span></div>
             </div>
         </div>
         <div class="p-2 rounded-xl border border-amber-600/70 bg-slate-950/80 text-amber-300 text-xs font-semibold flex items-center justify-center font-mono"><span>Status: LAUERSTELLUNG (COILING)</span></div>
@@ -1031,10 +1050,16 @@
             <div class="text-[10px] font-bold text-slate-100 tracking-wider">MIKRO (TAG)</div>
             <div class="text-sm font-bold text-amber-400">Lauerstellung</div>
             <div class="grid grid-cols-2 gap-x-2 gap-y-0.5 text-[11px] font-mono pt-0.5">
-                <div><span class="text-slate-400 font-sans">Abstand:</span> <span class="text-slate-100 font-semibold">-7.7%</span></div>
+                <div><span class="text-slate-400 font-sans">Abstand:</span> <span class="text-slate-100 font-semibold">-8.1%</span></div>
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.44</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.987</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Gespannte Feder: Wochen-Akkumulation (25.3%) gesund und gedämpft (1.54), RS-Leader bestätigt, Kurs lauert -8.1% am Base-Pivot.</span>
             </div>
         </div>
     </div>
@@ -1167,7 +1192,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$6.53</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$6.51</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -1198,6 +1223,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.07</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.212</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -1329,7 +1360,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$81.63</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$81.61</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -1360,6 +1391,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.29</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.955</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -1491,7 +1528,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$182.43</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$184.70</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -1522,6 +1559,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">2.36</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.981</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -1653,7 +1696,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$17.57</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$17.52</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -1684,6 +1727,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">2.22</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.986</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -1815,7 +1864,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$262.80</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$263.30</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -1846,6 +1895,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.34</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">-0.984</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -1977,7 +2032,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$105.25</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$105.11</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -2008,6 +2063,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">2.06</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">1.000</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -2139,7 +2200,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$58.12</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$58.27</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -2170,6 +2231,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">2.09</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.949</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -2301,7 +2368,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$71.10</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$71.86</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -2332,6 +2399,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.51</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.507</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -2463,7 +2536,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$292.20</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$292.14</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -2494,6 +2567,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.84</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.965</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -2625,7 +2704,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$14.89</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$15.02</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -2656,6 +2735,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.85</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.960</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -2787,7 +2872,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$70.67</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$70.99</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -2818,6 +2903,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">0.98</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.966</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -2949,7 +3040,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$49.40</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$49.35</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -2980,6 +3071,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">2.02</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.999</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Ja</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -3111,7 +3208,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$248.57</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$250.50</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -3142,6 +3239,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.31</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.988</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -3273,7 +3376,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$199.38</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$201.80</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -3304,6 +3407,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">1.23</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">-0.316</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -3435,7 +3544,7 @@
             </div>
             <div class="pt-1.5 border-t border-slate-800 flex flex-col gap-1">
                 <div class="flex items-center justify-between w-full"><span class="text-xs uppercase font-sans font-bold text-fuchsia-400">Kauftrigger:</span><span class="font-mono font-bold text-xs text-fuchsia-400">In Vorbereitung</span></div>
-                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$217.72</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
+                <div class="text-right text-[11px] font-mono text-slate-400"><span class="text-slate-500 font-sans text-[10px]">Aktuell:</span> <span class="font-bold text-slate-300">$218.53</span><span class="ml-1 text-[10px] text-slate-400"></span></div>
             </div>
         </div>
         
@@ -3466,6 +3575,12 @@
                 <div><span class="text-slate-400 font-sans">Dämpfung:</span> <span class="text-slate-100 font-semibold">2.02</span></div>
                 <div><span class="text-slate-400 font-sans">Kohärenz:</span> <span class="text-slate-100 font-semibold">0.891</span></div>
                 <div><span class="text-slate-400 font-sans">RS-Hoch:</span> <span class="text-slate-100 font-semibold">Nein</span></div>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/60 pt-1">
+            <div class="p-2 bg-slate-900/60 rounded-lg border border-slate-800/50 space-y-0.5">
+                <span class="text-[9px] font-bold text-cyan-400 uppercase tracking-wider block font-sans">Chartanalyse & Timing:</span>
+                <span class="text-[11px] text-slate-200 font-sans leading-relaxed block">Technisches Setup intakt • Schwingungsdämpfung im Normbereich.</span>
             </div>
         </div>
     </div>
@@ -3580,7 +3695,7 @@
                         <div class="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5 mb-2">
                             <span>Verwarnte Aktien auf Bewährung</span>
                         </div>
-                        <div class="space-y-1.5"><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FLYW</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 65%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Flywire Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FEIM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Frequency Electronics, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">CLMT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Calumet, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">COP</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 55%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ConocoPhillips</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Permian Resources Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">XOM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 45%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ExxonMobil Holdings Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">AFRM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Affirm Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">EQNR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Equinor ASA</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PNTG</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">The Pennant Group, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">nVent Electric plc</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MUR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Murphy Oil Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVGS</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Navigator Holdings Ltd.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DHT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">DHT Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">KNTK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Kinetik Holdings Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">BTE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Baytex Energy Corp.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DVN</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Devon Energy Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">HPE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Hewlett Packard Enterprise Company</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">TECK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 20%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Teck Resources Limited</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MEOH</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Methanex Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">OXY</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Occidental Petroleum Corporation</div></div></div>
+                        <div class="space-y-1.5"><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FLYW</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 65%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Flywire Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">CLMT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Calumet, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">FEIM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Frequency Electronics, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">COP</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 55%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ConocoPhillips</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Permian Resources Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">XOM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 45%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">ExxonMobil Holdings Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">AFRM</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Affirm Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">EQNR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Equinor ASA</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">PNTG</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 2 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">The Pennant Group, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 60%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">nVent Electric plc</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MUR</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 50%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Murphy Oil Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DHT</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">DHT Holdings, Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">NVGS</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 35%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Navigator Holdings Ltd.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">KNTK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Kinetik Holdings Inc.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">BTE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 30%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Baytex Energy Corp.</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">HPE</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Hewlett Packard Enterprise Company</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">DVN</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 25%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Devon Energy Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">TECK</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 20%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Teck Resources Limited</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">MEOH</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Methanex Corporation</div></div><div class="p-2.5 bg-slate-950/80 border border-amber-500/40 rounded-xl space-y-1 text-xs"><div class="flex justify-between items-start"><div class="flex items-center gap-1.5"><span class="font-bold text-cyan-400 font-mono text-sm">OXY</span><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800/60 font-mono">Strike 1 / 3</span></div><span class="px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-950 text-rose-300 border border-rose-800/60 font-mono">Score: 10%</span></div><div class="text-[10px] text-slate-400 truncate pt-0.5">Occidental Petroleum Corporation</div></div></div>
                     </div>
                 </div>
             </div>
@@ -3614,20 +3729,9 @@
     </div>
 
     <script>
-        const PAYWALL_ACTIVE = false;
-
         document.querySelectorAll('.qad-nav-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const tab = btn.dataset.tab;
-
-                if (PAYWALL_ACTIVE && tab !== 'market') {
-                    document.querySelectorAll('.qad-pane').forEach(p => p.classList.add('hidden'));
-                    document.getElementById('paywall-lock-banner').classList.remove('hidden');
-                    return;
-                }
-
-                document.getElementById('paywall-lock-banner').classList.add('hidden');
-
                 document.querySelectorAll('.qad-nav-btn').forEach(b => {
                     b.className = 'qad-nav-btn flex-1 min-w-[105px] py-2 px-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-slate-200 transition flex items-center justify-center gap-1';
                 });
